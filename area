@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import area as a
+import time as t
+import skilstak.colors as c
+
+if __name__ == '__main__':
+    option = a.parse_args()
+
+    try:
+        if option == "-c":
+            a.solve_circle()
+        elif option == "-s":
+            a.solve_square()
+        elif option == "-tr":
+            a.solve_triangle()
+        elif option == "-t":
+            a.solve_trapazoid
+        else:
+            print("Please use -c, -s, -tr, or -t to choose which shape to find the area of.")
+    except KeyboardInterrupt:
+        exit()
