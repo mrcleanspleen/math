@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
-import area as a
 import time as t
 import skilstak.colors as c
 
 if __name__ == '__main__':
     print("Welcome to the ultimate calculator")
-    option = input(">> ")
+    print("c = circle, s= square, tr = triangle, t = trapazoid, y = system")
+    inpt = input(">> ")
+    import area as a
     try:
-        if input == "c":
-            a.olve_circle()
-        elif input == "s":
+        if inpt == "c":
+            a.solve_circle()
+        elif inpt == "s":
             a.solve_square()
-        elif input == "tr":
+        elif inpt == "tr":
             a.solve_triangle()
-        elif input == "t":
-            a.solve_trapazoid
-        elif input == "y":
+        elif inpt == "t":
+            a.solve_trapazoid()
+        elif inpt == "y":
             """system solver"""
             a.solve_system()
         else:
-            print("Please use -c, -s, -tr, or -t or -y to choose which shape to find the area of.")
+            print("Please use c, s, tr, or t or y to choose which shape to find the area of.")
     except KeyboardInterrupt:
         exit()
