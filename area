@@ -4,20 +4,21 @@ import time as t
 import skilstak.colors as c
 
 if __name__ == '__main__':
-    option = a.parse_args()
+    print("Welcome to the ultimate calculator")
+    option = input(">> ")
     try:
-        if option == "-c":
-            a.solve_circle()
-        elif option == "-s":
+        if input == "c":
+            a.olve_circle()
+        elif input == "s":
             a.solve_square()
-        elif option == "-tr":
+        elif input == "tr":
             a.solve_triangle()
-        elif option == "-t":
+        elif input == "t":
             a.solve_trapazoid
-        elif option == "-y":
+        elif input == "y":
             """system solver"""
-            peter1()
+            a.solve_system()
         else:
-            print("Please use -c, -s, -tr, or -t to choose which shape to find the area of.")
+            print("Please use -c, -s, -tr, or -t or -y to choose which shape to find the area of.")
     except KeyboardInterrupt:
         exit()
