@@ -38,13 +38,13 @@ def solve_trapazoid():
     answer = int()
     answer = x * y/2 * z
     print("Your answer is : " + str(answer))
+def system():
 
 def parse_args():
     import sys
     option = ""
-
     if len(sys.argv) == 2:
         if sys.argv[1].startswith("-"):
             option = sys.argv[1]
         else:
-            print("ERROR! ERROR! DOES NOT COMPUTE!")
+            print("ERROR! ERROR! DOES NOT COMPUTE! KABLOOOEY!")
