@@ -1,13 +1,13 @@
 import skilstak.colors as c
 import time as t
-
+import math
 def solve_square():
     """Finds the area of a square based on its height"""
     height = input("What is the height of your square? >>> ")
     x = int(height)
     answer = int()
     answer = x * x
-    print("Your answer is : " + str(answer))
+    print("Your answer is : ",answer)
 
 def solve_circle():
     """Finds the area of a circle based on its radius"""
@@ -103,9 +103,32 @@ def solve_system():
         b31 = b2 - b2
         b4 = b31 - b2
         print("3 points to plot are:0 ,",b1,"and",b2,", 0 and",b4,",",b3)
-
-
-
+def solve_py():
+    print("  |\ ")
+    print("  | \ ")
+    print("  |  \c")
+    print(" a|   \ ")
+    print("  |    \ ")
+    print("  |     \ ")
+    print("  |______\ ")
+    print("      b    ")
+    print("What side are you missing?")
+    answer = input(">>> ")
+    if answer == "a":
+        q = input("b value >>> ")
+        w = input("c value >>> ")
+        b = int(q)
+        c = int(w)
+        a = int
+        b1 = int
+        c1 = int
+        b1 = b * b
+        c1 = c * c
+        cb2 = int
+        cb2 = c1 - b1
+        cb3 = int
+        cb3 = math.sqrt(cb2)
+        print(cb3)
 def parse_args():
     import sys
     option = ""

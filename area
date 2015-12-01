@@ -19,6 +19,8 @@ if __name__ == '__main__':
         elif inpt == "y":
             """system solver"""
             a.solve_system()
+        elif inpt == "pt":
+            a.solve_py()
         else:
             print("Please use c, s, tr, or t or y to choose which shape to find the area of.")
     except KeyboardInterrupt:
