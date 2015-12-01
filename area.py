@@ -128,7 +128,106 @@ def solve_py():
         cb2 = c1 - b1
         cb3 = int
         cb3 = math.sqrt(cb2)
-        print(cb3)
+        print("a value is",cb3)
+    elif answer == "b":
+        e = input("a value >>> ")
+        r = input("c value >>> ")
+        b = int(e)
+        c = int(r)
+        a = int
+        b1 = int
+        c1 = int
+        b1 = b * b
+        c1 = c * c
+        cb2 = int
+        cb2 = c1 - b1
+        cb3 = int
+        cb3 = math.sqrt(cb2)
+        print("b value is",cb3)
+    elif answer == "c":
+        t = input("a value >>> ")
+        y = input("b value >>> ")
+        a = int(t)
+        b = int(y)
+        a1 = int
+        b1 = int
+        a1 = a * a
+        b1 = b * b
+        ab11 = int
+        ab11 = a1 + b1
+        c = math.sqrt(ab11)
+        print("c value is",c)
+def solve_system2():
+    import skilstak.colors as c
+    print(c.clear + c.base03 + "Welcome to the system pinpoint device.")
+    print("1.Make sure you have 2 Systems")
+    print("2.Make sure they are in Ax+By Form")
+    print("3.Make sure you have no fractions or decimals")
+    print("4.Make sure you have no undefined or zero slopes")
+    print("First Equation")
+    print("Enter A value then hit enter")
+    print(c.green + "?" + c.base03 + "x + ?y = ?")
+    print("?x + ?y = ?")
+    f = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(f + "x + " + c.green + "?" + c.base03 + "y = ?")
+    print("?x + ?y = ?")
+    s = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(f  + "x + " + s + "y = " + c.green + "?")
+    print(c.base03 + "?x + ?y = ?")
+    t = input(">>> ")
+    print(c.clear + "Second Equation")
+    print("Enter A value then hit enter")
+    print(f + "x + " + s + "y = " + t)
+    print(c.green + "?" + c.base03 + "x + " + "?" + "y = " + "?")
+    f1 = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(f + "x + " + s + "y = " + t)
+    print(f1 + "x + " + c.green + "?" + c.base03 + "y = " + "?")
+    s1 = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(f + "x + " + s + "y = " + t)
+    print(f1 + "x + " + s1 + "y = " + c.green + "?" + c.base03)
+    t1 = input(">>> ")
+    print(c.clear + "Solving the systems:" + f + " x + " + s + " y = " + t)
+    print("and " + f1 + " x + " + s1 + " y = " + t1) 
+    a = int(f)
+    b = int(s)
+    c = int(t)
+    d = int(f1)
+    e = int(s1)
+    f = int(t1)
+    ad = int
+    ae = int
+    af = int
+    d1a = int
+    d1b = int
+    d1c = int
+    d1 = int
+    aed1b = int
+    d1caf = int
+    y = int 
+    by = int
+    by1 = int
+    cby1 = int
+    x = int
+    ad = a * d
+    ae = a * e
+    af = a * f
+    d1 = d * -1
+    d1a = d1 * a
+    d1b = d1 * b
+    d1c = d1 * c
+    aed1b = ae + d1b
+    d1caf = d1c + af
+    """if no solution or infinite, float error division line 77"""
+    y = 1. * d1caf / aed1b
+    by = b * y
+    by1 = by * -1
+    cby1 = c + by1
+    x = 1. * cby1 / a
+    print("The systems intersect at", x,",",y)
 def parse_args():
     import sys
     option = ""
