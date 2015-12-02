@@ -5,11 +5,14 @@ import skilstak.colors as c
 if __name__ == '__main__':
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
     print("pt = pythagorean theory, c = area of a circle, s= area of a square, tr = area of a triangle")
-    print("y = equation solver, t = area of a trapezoid, ss = system solver")
+    print("pc = perimeter of a circle, y = equation solver, t = area of a trapezoid, ss = system solver")
     inpt = input(">> ")
     import area as a
     try:
-        if inpt == "c":
+        if inpt == "pc":
+            print(c.clear)
+            a.solve_perc()
+        elif inpt == "c":
             print(c.clear)
             a.solve_circle()
         elif inpt == "s":
