@@ -3,27 +3,35 @@ import time as t
 import skilstak.colors as c
 
 if __name__ == '__main__':
-    print("Welcome to the ultimate calculator")
-    print("pt = pythagorean theory, c = circle, s= square, tr = triangle, t = trapazoid, y = system")
+    print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
+    print("pt = pythagorean theory, c = area of a circle, s= area of a square, tr = area of a triangle")
+    print("y = equation solver, t = area of a trapezoid, ss = system solver")
     inpt = input(">> ")
     import area as a
     try:
         if inpt == "c":
+            print(c.clear)
             a.solve_circle()
         elif inpt == "s":
+            print(c.clear)
             a.solve_square()
         elif inpt == "tr":
+            print(c.clear)
             a.solve_triangle()
         elif inpt == "t":
+            print(c.clear)
             a.solve_trapazoid()
         elif inpt == "y":
-            """system solver"""
+            print(c.clear)
+            """Equation solver"""
             a.solve_system()
         elif inpt == "pt":
+            print(c.clear)
             a.solve_py()
         elif inpt == "ss":
+            print(c.clear)
             a.solve_system2()
         else:
-            print("Please use c, s, tr, or t or y to choose which shape to find the area of.")
+            print("Please use c, s, tr, or t, y, pt, or ss to choose which shape/formula to find the area of/solve.")
     except KeyboardInterrupt:
         exit()
