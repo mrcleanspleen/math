@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import volume as v
+
+if __name__ == '__main__':
+    v.solve_cube()
