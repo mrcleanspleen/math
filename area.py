@@ -103,11 +103,6 @@ def solve_system():
         b31 = b2 - b2
         b4 = b31 - b2
         print("3 points to plot are:0 ,",b1,"and",b2,", 0 and",b4,",",b3)
-def solve_perc():
-    b = input("radius >>> ")
-    c = int(b)
-    a = int
-    a = 3.14 * c
     print(a)
 def solve_py():
     print("  |\ ")
