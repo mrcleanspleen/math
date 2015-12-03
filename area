@@ -1,21 +1,40 @@
 #!/usr/bin/env python3
-import area as a
 import time as t
 import skilstak.colors as c
 
 if __name__ == '__main__':
-    option = a.parse_args()
-
+    print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
+    print("pt = pythagorean theory, c = area of a circle, s= area of a square, tr = area of a triangle")
+    print("pc = perimeter of a circle, y = equation solver, t = area of a trapezoid, ss = system solver")
+    inpt = input(">> ")
+    import area as a
     try:
-        if option == "-c":
+        if inpt == "pc":
+            print(c.clear)
+            a.solve_perc()
+        elif inpt == "c":
+            print(c.clear)
             a.solve_circle()
-        elif option == "-s":
+        elif inpt == "s":
+            print(c.clear)
             a.solve_square()
-        elif option == "-tr":
+        elif inpt == "tr":
+            print(c.clear)
             a.solve_triangle()
-        elif option == "-t":
-            a.solve_trapazoid
+        elif inpt == "t":
+            print(c.clear)
+            a.solve_trapazoid()
+        elif inpt == "y":
+            print(c.clear)
+            """Equation solver"""
+            a.solve_system()
+        elif inpt == "pt":
+            print(c.clear)
+            a.solve_py()
+        elif inpt == "ss":
+            print(c.clear)
+            a.solve_system2()
         else:
-            print("Please use -c, -s, -tr, or -t to choose which shape to find the area of.")
+            print("Please use c, s, tr, or t, y, pt, or ss to choose which shape/formula to find the area of/solve.")
     except KeyboardInterrupt:
         exit()
