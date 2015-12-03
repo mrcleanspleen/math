@@ -2,6 +2,9 @@ import skilstak.colors as c
 import time as t
 import math
 
+def solve_square_root():
+    """Finds the square root of a number"""
+
 def solve_cube():
     """Finds the volume of a cube"""
     height = input("What is the height of your cube? >>> ")
