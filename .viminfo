@@ -265,8 +265,8 @@ $
 # global variables:
 
 # File marks:
-'0  2  13  ~/.git/MERGE_MSG
-'1  7  36  ~/.git/config
+'0  7  1  ~/.git/config
+'1  2  13  ~/.git/MERGE_MSG
 '2  9  86  ~/solver
 '3  11  26  ~/solver.py
 '4  7  37  ~/solver.py
@@ -277,9 +277,9 @@ $
 '9  106  4  ~/math/area.py
 
 # Jumplist (newest first):
+-'  7  1  ~/.git/config
 -'  2  13  ~/.git/MERGE_MSG
 -'  1  0  ~/.git/MERGE_MSG
--'  7  36  ~/.git/config
 -'  1  0  ~/.git/config
 -'  9  86  ~/solver
 -'  46  12  ~/solver
@@ -374,22 +374,20 @@ $
 -'  16  0  ~/repos/python-1/keypn
 -'  5  20  ~/repos/python-1/finiteloop
 -'  4  0  ~/repos/python-1/finiteloop
--'  1  0  ~/repos/python-1/finite
--'  45  15  ~/repos/flappy/public/assets/config.json
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/config
+	"	7	1
+	^	7	37
+	.	7	36
+	+	7	36
 
 > ~/.git/MERGE_MSG
 	"	2	13
 	^	2	14
 	.	3	0
 	+	3	0
-
-> ~/.git/config
-	"	7	36
-	^	7	37
-	.	7	36
-	+	7	36
 
 > ~/solver
 	"	9	86
