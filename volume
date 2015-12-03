@@ -2,4 +2,4 @@
 import volume as v
 
 if __name__ == '__main__':
-    v.solve_cube()
+    v.solve_sphere()
