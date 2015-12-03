@@ -4,8 +4,9 @@ import skilstak.colors as c
 
 if __name__ == '__main__':
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
-    print("pt = pythagorean theory, c = area of a circle, s= area of a square, tr = area of a triangle")
+    print("pt = pythagorean theorem, c = area of a circle, s= area of a square, tr = area of a triangle")
     print("pc = perimeter of a circle, y = equation solver, t = area of a trapezoid, ss = system solver")
+    print("cu = volume of a cube, co == volume of a sphere")
     inpt = input(">> ")
     import area as a
     try:

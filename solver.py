@@ -1,6 +1,22 @@
 import skilstak.colors as c
 import time as t
 import math
+
+def solve_cube():
+    """Finds the volume of a cube"""
+    x = input("What is the height of your cube? >>> ")
+    x = float()
+    answer = float(x**2)
+    print("Your answer is : " ,answer)
+
+def solve_sphere():
+    """Finds the volume of a sphere based on user input"""
+    x = input("What is the radius of your sphere? >>> ")
+    x = int()
+    xpower = math.pow(x, 3)
+    answer = int(4/3 * 3.14 * xpower)
+    print("Your answer is : ", answer)
+
 def solve_square():
     """Finds the area of a square based on its height"""
     height = input("What is the height of your square? >>> ")
@@ -110,14 +126,14 @@ def solve_perc():
     a = 3.14 * c
     print(a)
 def solve_py():
-    print("  |\ ")
-    print("  | \ ")
-    print("  |  \c")
-    print(" a|   \ ")
-    print("  |    \ ")
-    print("  |     \ ")
-    print("  |______\ ")
-    print("      b    ")
+    print("""|\ 
+             | \ 
+             |  \c
+            a|   \ 
+             |    \ 
+             |     \ 
+             |______\ 
+                b   """)
     print("What side are you missing?")
     answer = input(">>> ")
     if answer == "a":
@@ -234,6 +250,9 @@ def solve_system2():
     cby1 = c + by1
     x = 1. * cby1 / a
     print("The systems intersect at", x,",",y)
+
+
+
 def parse_args():
     import sys
     option = ""
