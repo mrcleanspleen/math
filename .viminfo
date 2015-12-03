@@ -36,15 +36,18 @@ $
 # Registers:
 "0	CHAR	0
 	"
-""1	LINE	0
+""1	CHAR	0
+	
+	def
+"2	LINE	0
 	def solve_perc():
 	    b = input("radius >>> ")
 	    c = int(b)
 	    a = int
 	    a = 3.14 * c
-"2	LINE	0
-	    print("What is the radius of your circle?")
 "3	LINE	0
+	    print("What is the radius of your circle?")
+"4	LINE	0
 	    af = int
 	    d1a = int
 	    d1b = int
@@ -73,9 +76,9 @@ $
 	    cby1 = c + by1
 	    x = 1. * cby1 / a
 	    print("The systems intersect at", x,",",y)
-"4	LINE	0
-	    af = int
 "5	LINE	0
+	    af = int
+"6	LINE	0
 	    af = int
 	    d1a = int
 	    d1b = int
@@ -103,7 +106,7 @@ $
 	    by1 = by * -1
 	    cby1 = c + by1
 	    x = 1. * cby1 / a
-"6	LINE	0
+"7	LINE	0
 	    print(c.clear + c.base03 + "Welcome to the system pinpoint device.")
 	    print("1.Make sure you have 2 Systems")
 	    print("2.Make sure they are in Ax+By Form")
@@ -154,7 +157,7 @@ $
 	    f = int(t1)
 	    ad = int
 	    ae = int
-"7	LINE	0
+"8	LINE	0
 	if __name__ == "__main__":
 	    print(c.clear + c.base03 + "Welcome to the system pinpoint device.")
 	    print("1.Make sure you have 2 Systems")
@@ -205,7 +208,7 @@ $
 	    e = int(s1)
 	    f = int(t1)
 	    ad = int
-"8	CHAR	0
+"9	CHAR	0
 	    print(c.clear + c.base03 + "Welcome to the system pinpoint device.")
 	    print("1.Make sure you have 2 Systems")
 	    print("2.Make sure they are in Ax+By Form")
@@ -256,34 +259,33 @@ $
 	    f = int(t1)
 	    ad = int
 	    ae = int
-"9	LINE	0
-	        a = int
-	        b1 = int
-	        c1 = int
-	        b1 = b * b
-	        c1 = c * c
-	        cb2 = int
-	        cb2 = c1 - b1
-	        cb3 = int
-	        cb3 = math.sqrt(cb2)
 "-	CHAR	0
 	"
 
 # global variables:
 
 # File marks:
-'0  106  4  ~/math/area.py
-'1  29  0  ~/math/area.py
-'2  1  0  ~/math/area.yp
-'3  42  46  ~/math/area.py
-'4  8  38  ~/math/area
-'5  15  9  ~/math/area
-'6  107  15  ~/math/area.py
-'7  14  12  ~/math/area
-'8  6  4  ~/math/area
-'9  19  25  ~/math/area
+'0  9  86  ~/solver
+'1  11  26  ~/solver.py
+'2  7  37  ~/solver.py
+'3  9  15  ~/solver.py
+'4  46  31  ~/solver
+'5  5  15  ~/solver.py
+'6  34  0  ~/solver.py
+'7  106  4  ~/math/area.py
+'8  29  0  ~/math/area.py
+'9  1  0  ~/math/area.yp
 
 # Jumplist (newest first):
+-'  9  86  ~/solver
+-'  46  12  ~/solver
+-'  11  26  ~/solver.py
+-'  7  4  ~/solver.py
+-'  9  4  ~/solver.py
+-'  5  0  ~/solver.py
+-'  1  0  ~/solver
+-'  34  0  ~/solver.py
+-'  1  0  ~/solver.py
 -'  106  4  ~/math/area.py
 -'  29  0  ~/math/area.py
 -'  42  4  ~/math/area.py
@@ -373,15 +375,43 @@ $
 -'  48  4  ~/repos/flappy/public/assets/config.json
 -'  3  22  ~/repos/python-1/davesprogram
 -'  1  0  ~/repos/python-1/davesprogram
--'  1  0  ~/ms
--'  1  0  ~/repos/python-1/msolv2
--'  1  0  ~/msolve2
--'  44  39  ~/repos/python-1/msolve2
--'  52  4  ~/repos/python-1/msolve2
--'  41  4  ~/repos/python-1/msolve2
--'  30  4  ~/repos/python-1/msolve2
 
 # History of marks within files (newest to oldest):
+
+> ~/solver
+	"	9	86
+	^	9	87
+	.	9	86
+	+	44	26
+	+	46	31
+	+	9	86
+
+> ~/solver.py
+	"	11	26
+	^	11	27
+	.	11	26
+	+	42	0
+	+	40	4
+	+	36	3
+	+	37	3
+	+	38	4
+	+	39	4
+	+	35	0
+	+	8	3
+	+	7	16
+	+	10	0
+	+	8	4
+	+	10	20
+	+	11	16
+	+	5	16
+	+	10	17
+	+	41	0
+	+	12	0
+	+	9	15
+	+	7	8
+	+	8	16
+	+	11	26
+	i	10	13
 
 > ~/math/area.py
 	"	106	4
@@ -2663,13 +2693,4 @@ $
 	+	9	0
 
 > ~/repos/story/story/look
-	"	1	0
-
-> ~/repos/story/story/tree.py
-	"	6	0
-	^	6	15
-	.	6	14
-	+	6	14
-
-> ~/repos/story/story/intro
 	"	1	0

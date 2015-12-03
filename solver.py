@@ -2,8 +2,13 @@ import skilstak.colors as c
 import time as t
 import math
 
-def solve_square_root():
+def solve_squareroot():
     """Finds the square root of a number"""
+    inpu = input("square root what number? >>> ")
+    i = int(inpu)
+    answer = int
+    answer = math.sqrt(i)
+    print("square root is",answer)
 
 def solve_cube():
     """Finds the volume of a cube"""
@@ -26,6 +31,13 @@ def solve_square():
     answer = int()
     answer = x * x
     print("Your answer is : ",answer)
+def solve_percircle():
+
+    b = input("radius >>> ")
+    c = int(b)
+    a = int
+    a = 3.14 * c
+    print(a)
 
 def solve_circle():
     """Finds the area of a circle based on its radius"""
