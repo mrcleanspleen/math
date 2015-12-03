@@ -265,18 +265,22 @@ $
 # global variables:
 
 # File marks:
-'0  9  86  ~/solver
-'1  11  26  ~/solver.py
-'2  7  37  ~/solver.py
-'3  9  15  ~/solver.py
-'4  46  31  ~/solver
-'5  5  15  ~/solver.py
-'6  34  0  ~/solver.py
-'7  106  4  ~/math/area.py
-'8  29  0  ~/math/area.py
-'9  1  0  ~/math/area.yp
+'0  2  13  ~/.git/MERGE_MSG
+'1  7  36  ~/.git/config
+'2  9  86  ~/solver
+'3  11  26  ~/solver.py
+'4  7  37  ~/solver.py
+'5  9  15  ~/solver.py
+'6  46  31  ~/solver
+'7  5  15  ~/solver.py
+'8  34  0  ~/solver.py
+'9  106  4  ~/math/area.py
 
 # Jumplist (newest first):
+-'  2  13  ~/.git/MERGE_MSG
+-'  1  0  ~/.git/MERGE_MSG
+-'  7  36  ~/.git/config
+-'  1  0  ~/.git/config
 -'  9  86  ~/solver
 -'  46  12  ~/solver
 -'  11  26  ~/solver.py
@@ -372,11 +376,20 @@ $
 -'  4  0  ~/repos/python-1/finiteloop
 -'  1  0  ~/repos/python-1/finite
 -'  45  15  ~/repos/flappy/public/assets/config.json
--'  48  4  ~/repos/flappy/public/assets/config.json
--'  3  22  ~/repos/python-1/davesprogram
--'  1  0  ~/repos/python-1/davesprogram
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	"	2	13
+	^	2	14
+	.	3	0
+	+	3	0
+
+> ~/.git/config
+	"	7	36
+	^	7	37
+	.	7	36
+	+	7	36
 
 > ~/solver
 	"	9	86
@@ -2666,31 +2679,4 @@ $
 	^	1	0
 
 > ~/repos/story/lockedbox.py
-	"	1	0
-
-> ~/repos/story/story/papera.py
-	"	8	26
-	^	8	27
-	.	9	0
-	+	10	0
-	+	4	2
-	+	3	21
-	+	1	7
-	+	3	155
-	+	5	7
-	+	9	2
-	+	6	12
-	+	9	0
-	+	5	10
-	+	6	16
-	+	7	16
-	+	8	26
-	+	7	26
-	+	6	26
-	+	5	21
-	+	6	27
-	+	7	27
-	+	9	0
-
-> ~/repos/story/story/look
 	"	1	0
