@@ -1,6 +1,20 @@
 import skilstak.colors as c
 import time as t
 import math
+def solve_inequality()
+    """Checks whether a number will solve an inequality"""
+    print(c.cl + c.base03 + "Welcome to the inequalities solver machine")
+    print("Make sure your equation is in standard form, or Ax + By = C")
+    print("Make sure you have no fractions or decimals")
+    ine = input("Enter the inequality. Use >=, >, <, or <=. >>>")
+    print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03  + "?")
+    print(c.cl + "Enter A value then hit enter")
+    print(c.red + "?" + c.base03 + "x + ?y " + ine + " ?")
+    a = input(">>>")
+    print("Enter B value then hit enter")
+    print(c.base03 + a + "x + " + c.red + "?" + c.base03 + "y = ?")
+    b = input(">>>")
+
 
 def solve_squareroot():
     """Finds the square root of a number"""
@@ -32,7 +46,6 @@ def solve_square():
     answer = x * x
     print("Your answer is : ",answer)
 def solve_percircle():
-
     b = input("radius >>> ")
     c = int(b)
     a = int
@@ -68,6 +81,7 @@ def solve_trapazoid():
     answer = int()
     answer = x * y/2 * z
     print("Your answer is : " + str(answer))
+
 def solve_system():
     print(c.clear + c.green +"Welcome to the Math System Solver!")
     print("y = 1y,x = 1x,")

@@ -1,8 +1,0 @@
-#!/usr/bin/env python3
-import colors as c
-import time
-import math
-test = input("square root of >>>")
-test1 = int(test)
-test2 = math.sqrt(test1)
-print(test2)
