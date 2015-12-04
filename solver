@@ -6,7 +6,7 @@ if __name__ == '__main__':
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
     print("pt = pythagorean theorem, c = area of a circle, s= area of a square, tr = area of a triangle")
     print("pc = perimeter of a circle, y = equation solver, t = area of a trapezoid, ss = system solver")
-    print("cu = volume of a cube, sph = volume of a sphere")
+    print("cu = volume of a cube, sph = volume of a sphere, sr = square root a number"))
     inpt = input(">> ")
     import solver as a
     try:
@@ -41,6 +41,9 @@ if __name__ == '__main__':
         elif inpt == "sph":
             print(c.cl)
             a.solve_sphere
+        elif inpt == "sr":
+            print(c.cl)
+            a.solve_squareroot()
         else:
             print("Please use c, s, tr, or t, y, pt, or ss to choose which shape/formula to find the area of/solve.")
     except KeyboardInterrupt:
