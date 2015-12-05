@@ -11,10 +11,22 @@ def solve_inequality():
     print(c.cl + "Enter A value then hit enter")
     print(c.red + "?" + c.base03 + "x + ?y " + ine + " ?")
     a = input(">>>")
-    print("Enter B value then hit enter")
+    print(c.cl + "Enter B value then hit enter")
     print(c.base03 + a + "x + " + c.red + "?" + c.base03 + "y = ?")
     b = input(">>>")
-
+    print(c.cl + "Enter C value then hit enter")
+    print(c.base03 + a + "x + " + b + "y " + ine + c.red + " ?")
+    c = input(">>>")
+    print(c.cl + "What x value are you trying to test?")
+    x = input(">>>")
+    print(c.cl + "What y value are you trying to test ?")
+    y = input(">>>")
+    answer = int(a * x + b * y)
+    ine = bool()
+    if c ine answer:
+        print(c.cl + "Your point will work! Yay!")
+    else:
+        print("Your point will not work")
 
 def solve_squareroot():
     """Finds the square root of a number"""

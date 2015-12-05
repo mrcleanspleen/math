@@ -44,6 +44,9 @@ if __name__ == '__main__':
         elif inpt == "sr":
             print(c.cl)
             a.solve_squareroot()
+        elif inpt == "si":
+            print(c.cl)
+            a.solve_inequality()
         else:
             print("Please use c, s, tr, or t, y, pt, or ss to choose which shape/formula to find the area of/solve.")
     except KeyboardInterrupt:
