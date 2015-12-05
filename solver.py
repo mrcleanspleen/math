@@ -6,9 +6,49 @@ def yay():
 def no():
     print("Your point does not work")
 def solve_inequality2():
-    """Checks whether a set of points will solve an inequality""")
-    print(c.cl + c.base03 + 
-
+    """Checks whether a set of points will solve a systems of inequalities"""
+    print(c.cl + c.base03 +  "Welcome to the system of inequalities solver machine")
+    print("Make sure you have 2 inequalities")
+    print("Make sure the equation is in standard form, or Ax + By = C")
+    print("Make sure your have no fractions or decimals")
+    print("Enter the first equations ineqaulity. Use only >, <, <=, or >=.")
+    print(c.base03 + "?x + ?y " + c.red + "_ " + "?")
+    in1 = input(">>>" )
+    print(c.cl + "Enter A value then hit enter")
+    print(c.red + "?" + c.base03 + "x + ?y " + ine + " ?")
+    a1 = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(c.base03 + a + "x + " + c.red + "?" + c.base03 + "y = ?")
+    b1 = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(c.base03 + a + "x + " + b + "y " + ine + c.red + " ?" + c.x)
+    d1 = input(">>> ")
+    print(c.cl + "Enter the second equations ineqaulity. Use only >, <, <=, or >=.")
+    print(c.base03 + "?x + ?y " + c.red + "_ " + "?")
+    in2 = input(">>>" )
+    print(c.cl + "Enter A value then hit enter")
+    print(c.red + "?" + c.base03 + "x + ?y " + ine + " ?")
+    a2 = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(c.base03 + a + "x + " + c.red + "?" + c.base03 + "y = ?")
+    b2 = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(c.base03 + a + "x + " + b + "y " + ine + c.red + " ?" + c.x)
+    d2 = input(">>> ")
+    print(c.cl + "What x value are you trying to test?")
+    x = input(">>> ")
+    print(c.cl + "What y value are you trying to test?")
+    a1 = int()
+    a2 = int()
+    b1 = int()
+    b2 = int()
+    d1 = int()
+    d2 = int()
+    x = int()
+    y = int()
+    answer1 = a1 * x + b1 * y
+    answer2 = a2 * x + b2 * y
+    if in1 == ">" and in2 == ">":
 def solve_inequality():
     """Checks whether a number will solve an inequality"""
     print(c.clear + c.base03 + "Welcome to the inequalities solver machine")
