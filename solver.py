@@ -8,42 +8,47 @@ def no():
 
 def solve_inequality():
     """Checks whether a number will solve an inequality"""
-    print(c.cl + c.base03 + "Welcome to the inequalities solver machine")
+    print(c.clear + c.base03 + "Welcome to the inequalities solver machine")
     print("Make sure your equation is in standard form, or Ax + By = C")
     print("Make sure you have no fractions or decimals")
-    ine = input("Enter the inequality. Use >=, >, <, or <=. >>>")
+    ine = input("Enter the inequality. Use >=, >, <, or <=. >>> ")
     print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03  + "?")
-    print(c.cl + "Enter A value then hit enter")
+    print(c.clear + "Enter A value then hit enter")
     print(c.red + "?" + c.base03 + "x + ?y " + ine + " ?")
-    a = input(">>>")
-    print(c.cl + "Enter B value then hit enter")
+    a = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
     print(c.base03 + a + "x + " + c.red + "?" + c.base03 + "y = ?")
-    b = input(">>>")
-    print(c.cl + "Enter C value then hit enter")
-    print(c.base03 + a + "x + " + b + "y " + ine + c.red + " ?")
-    c = input(">>>")
-    print(c.cl + "What x value are you trying to test?")
-    x = input(">>>")
+    b = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(c.base03 + a + "x + " + b + "y " + ine + c.red + " ?" + c.x)
+    d = input(">>> ")
+    print(c.clear + "What x value are you trying to test?")
+    x = input(">>> ")
     print(c.cl + "What y value are you trying to test ?")
-    y = input(">>>")
-    answer = int(a * x + b * y)
+    y = input(">>> ")
+    a = int()
+    x = int()
+    b = int()
+    y = int()
+    d = int()
+    answer = a * x + b * y
     if ine == ">":
-        if answer > c:
+        if answer > d:
             yay()
         else:
             no()
     elif ine == "<":
-        if answer < c:
+        if answer < d:
             yay()
         else:
             no()
     elif ine == ">=":
-        if answer >= c:
+        if answer >= d:
             yay()
         else:
             no()
     elif ine == "<=":
-        if answer <= c:
+        if answer <= d:
             yay()
         else:
             no()
