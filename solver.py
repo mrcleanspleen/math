@@ -5,6 +5,7 @@ def yay():
     print("Your point works! Yay!")
 def no():
     print("Your point does not work")
+def solve_inequality2():
 
 def solve_inequality():
     """Checks whether a number will solve an inequality"""
