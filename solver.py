@@ -49,6 +49,85 @@ def solve_inequality2():
     answer1 = a1 * x + b1 * y
     answer2 = a2 * x + b2 * y
     if in1 == ">" and in2 == ">":
+        if answer1 > d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">" and in2 == "<":
+        if answer1 > d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">" and in2 == ">=":
+        if answer1 > d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">" and in2 == "<=":
+        if answer1 > d1 and answer2 <= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == ">":
+        if answer1 < d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == ">=":
+        if answer1 < d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == "<":
+        if answer1 < d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == "<":
+        if answer1 < d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == ">":
+        if answer1 >= d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == "<":
+        if answer1 >= d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == ">=":
+        if answer1 >= d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == "<=":
+        if answer1 >= d1 and answer2 <= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == ">":
+        if answer1 <= d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == ">=":
+        if answer1 <= d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == "<":
+        if answer1 <= d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == "<":
+        if answer1 <= d1 and answer2 < d2:
+            yay()
+        else:
+            no()
 def solve_inequality():
     """Checks whether a number will solve an inequality"""
     print(c.clear + c.base03 + "Welcome to the inequalities solver machine")
