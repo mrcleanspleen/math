@@ -6,6 +6,8 @@ def yay():
 def no():
     print("Your point does not work")
 def solve_inequality2():
+    """Checks whether a set of points will solve an inequality""")
+    print(c.cl + c.base03 + 
 
 def solve_inequality():
     """Checks whether a number will solve an inequality"""
