@@ -1,7 +1,7 @@
 import skilstak.colors as c
 import time as t
 import math
-def solve_inequality()
+def solve_inequality():
     """Checks whether a number will solve an inequality"""
     print(c.cl + c.base03 + "Welcome to the inequalities solver machine")
     print("Make sure your equation is in standard form, or Ax + By = C")
