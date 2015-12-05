@@ -1,6 +1,11 @@
 import skilstak.colors as c
 import time as t
 import math
+def yay():
+    print("Your point works! Yay!")
+def no():
+    print("Your point does not work")
+
 def solve_inequality():
     """Checks whether a number will solve an inequality"""
     print(c.cl + c.base03 + "Welcome to the inequalities solver machine")
@@ -22,11 +27,28 @@ def solve_inequality():
     print(c.cl + "What y value are you trying to test ?")
     y = input(">>>")
     answer = int(a * x + b * y)
-    ine = bool()
-    if c ine answer:
-        print(c.cl + "Your point will work! Yay!")
+    if ine == ">":
+        if answer > c:
+            yay()
+        else:
+            no()
+    elif ine == "<":
+        if answer < c:
+            yay()
+        else:
+            no()
+    elif ine == ">=":
+        if answer >= c:
+            yay()
+        else:
+            no()
+    elif ine == "<=":
+        if answer <= c:
+            yay()
+        else:
+            no()
     else:
-        print("Your point will not work")
+        print("ERROR! ERROR! DOES NOT COMPUTE! KABLOOEY!")
 
 def solve_squareroot():
     """Finds the square root of a number"""
