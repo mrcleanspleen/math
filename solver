@@ -123,6 +123,6 @@ if __name__ == '__main__':
             print(c.cl)
             s.hexagon()
         else:
-            print("Please use c, s, tr, or t, y, pt, or ss to choose which shape/formula to find the area of/solve.")
+            from peter1 import peter1
     except KeyboardInterrupt:
         exit()
