@@ -1,4 +1,4 @@
-mport colors as c
+import skilstak.colors as c
 import time
 import math
 def troll():
