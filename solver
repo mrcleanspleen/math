@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-import time as t 
+import time as t
 import skilstak.colors as c
-
 def stuff():
     print("""
     pt = pythagorean theorem, 
@@ -29,9 +28,12 @@ def stuff():
     sr = square root a number""")
 if __name__ == '__main__':
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
-    import solver as s
     stuff()
     inpt = input(">> ")
+    import misc  as r
+    import area as a
+    import surface as s
+    import volume as v
     try:
         if inpt == "st":
             """surface area tri prism"""
@@ -68,7 +70,7 @@ if __name__ == '__main__':
         elif inpt == "pc":
             """circum. of a circle"""
             print(c.cl)
-            s.solve_perc()
+            r.solve_perc()
         elif inpt == "sc":
             """surface area cube"""
             print(c.cl)
@@ -76,43 +78,43 @@ if __name__ == '__main__':
         elif inpt == "c":
             """area of a circle"""
             print(c.clear)
-            s.solve_circle()
+            a.solve_circle()
         elif inpt == "s":
             """area of a square"""
             print(c.clear)
-            s.solve_square()
+            a.solve_square()
         elif inpt == "tr":
             """area of a triangle"""
             print(c.clear)
-            s.solve_triangle()
+            a.solve_triangle()
         elif inpt == "t":
             """area of a trapezoid"""
             print(c.clear)
-            s.solve_trapazoid()
+            a.solve_trapazoid()
         elif inpt == "y":
             print(c.clear)
             """Equation solver"""
-            s.solve_system()
+            r.solve_system()
         elif inpt == "pt":
             """solves A^2 + B^2 = C^2"""
             print(c.clear)
-            s.solve_py()
+            r.solve_py()
         elif inpt == "ss":
             """solves a system"""
             print(c.clear)
-            s.solve_system2()
+            r.solve_system2()
         elif inpt == "cu":
             """finds volume of a cube"""
             print(c.cl)
-            s.solve_cube()
+            v.solve_cube()
         elif inpt == "sh":
             """find volume of a sphere"""
             print(c.cl)
-            s.solvesphere()
+            v.solvesphere()
         elif inpt == "sr":
             """square root a number"""
             print(c.cl)
-            s.solve_squareroot()
+            r.solve_squareroot()
         elif inpt == "cs":
             """surface area cylinder"""
             print(c.cl)
