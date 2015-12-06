@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-inport time as t 
+import time as t 
 import skilstak.colors as c
 
 def stuff():
