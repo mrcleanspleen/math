@@ -1,6 +1,182 @@
 import skilstak.colors as c
 import time as t
 import math
+def yay():
+    print("Your point works! Yay!")
+def no():
+    print("Your point does not work")
+def solve_inequality2():
+    """Checks whether a set of points will solve a systems of inequalities"""
+    print(c.cl + c.base03 +  "Welcome to the system of inequalities solver machine")
+    print("Make sure you have 2 inequalities")
+    print("Make sure the equation is in standard form, or Ax + By = C")
+    print("Make sure your have no fractions or decimals")
+    print("Enter the first equations ineqaulity. Use only >, <, <=, or >=.")
+    print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03 + "?")
+    in1 = input(">>> ")
+    print(c.cl + "Enter A value then hit enter")
+    print(c.red + "?" + c.base03 + "x + ?y " + in1 + " ?")
+    a1 = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(c.base03 + a1 + "x + " + c.red + "?" + c.base03 + "y " + in1 + " ?")
+    b1 = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(c.base03 + a1 + "x + " + b1 + "y " + in1 + c.red + " ?" + c.x)
+    d1 = input(">>> ")
+    print(c.cl + "Enter the second equations ineqaulity. Use only >, <, <=, or >=.")
+    print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03 + "?")
+    in2 = input(">>> ")
+    print(c.cl + "Enter A value then hit enter")
+    print(c.red + "?" + c.base03 + "x + ?y " + in2 + " ?")
+    a2 = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(c.base03 + a2 + "x + " + c.red + "?" + c.base03 + "y " + in2 + " ?")
+    b2 = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(c.base03 + a2 + "x + " + b2 + "y " + in2 + c.red + " ?" + c.x)
+    d2 = input(">>> ")
+    print(c.cl + "What x value are you trying to test?")
+    x = input(">>> ")
+    print(c.cl + "What y value are you trying to test?")
+    y = input(">>> ")
+    a1 = int()
+    a2 = int()
+    b1 = int()
+    b2 = int()
+    d1 = int()
+    d2 = int()
+    x = int()
+    y = int()
+    answer1 = a1 * x + b1 * y
+    answer2 = a2 * x + b2 * y
+    if in1 == ">" and in2 == ">":
+        if answer1 > d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">" and in2 == "<":
+        if answer1 > d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">" and in2 == ">=":
+        if answer1 > d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">" and in2 == "<=":
+        if answer1 > d1 and answer2 <= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == ">":
+        if answer1 < d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == ">=":
+        if answer1 < d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == "<":
+        if answer1 < d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<" and in2 == "<":
+        if answer1 < d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == ">":
+        if answer1 >= d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == "<":
+        if answer1 >= d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == ">=":
+        if answer1 >= d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == ">=" and in2 == "<=":
+        if answer1 >= d1 and answer2 <= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == ">":
+        if answer1 <= d1 and answer2 > d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == ">=":
+        if answer1 <= d1 and answer2 >= d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == "<":
+        if answer1 <= d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+    elif in1 == "<=" and in2 == "<":
+        if answer1 <= d1 and answer2 < d2:
+            yay()
+        else:
+            no()
+def solve_inequality():
+    """Checks whether a number will solve an inequality"""
+    print(c.clear + c.base03 + "Welcome to the inequalities solver machine")
+    print("Make sure your equation is in standard form, or Ax + By = C")
+    print("Make sure you have no fractions or decimals")
+    ine = input("Enter the inequality. Use >=, >, <, or <=. >>> ")
+    print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03  + "?")
+    print(c.clear + "Enter A value then hit enter")
+    print(c.red + "?" + c.base03 + "x + ?y " + ine + " ?")
+    a = input(">>> ")
+    print(c.clear + "Enter B value then hit enter")
+    print(c.base03 + a + "x + " + c.red + "?" + c.base03 + "y = ?")
+    b = input(">>> ")
+    print(c.clear + "Enter C value then hit enter")
+    print(c.base03 + a + "x + " + b + "y " + ine + c.red + " ?" + c.x)
+    d = input(">>> ")
+    print(c.clear + "What x value are you trying to test?")
+    x = input(">>> ")
+    print(c.cl + "What y value are you trying to test ?")
+    y = input(">>> ")
+    a = int()
+    x = int()
+    b = int()
+    y = int()
+    d = int()
+    answer = a * x + b * y
+    if ine == ">":
+        if answer > d:
+            yay()
+        else:
+            no()
+    elif ine == "<":
+        if answer < d:
+            yay()
+        else:
+            no()
+    elif ine == ">=":
+        if answer >= d:
+            yay()
+        else:
+            no()
+    elif ine == "<=":
+        if answer <= d:
+            yay()
+        else:
+            no()
+    else:
+        print("ERROR! ERROR! DOES NOT COMPUTE! KABLOOEY!")
 
 def solve_squareroot():
     """Finds the square root of a number"""
