@@ -123,6 +123,7 @@ if __name__ == '__main__':
             print(c.cl)
             s.hexagon()
         else:
-            from peter1 import peter1
+            from peter1 import troll
+            troll()
     except KeyboardInterrupt:
         exit()
