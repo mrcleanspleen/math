@@ -221,7 +221,11 @@ if __name__ == '__main__':
         elif inpt == "df":
             print(c.cl)
             r.solve_distance()
+        elif inpt == "spt":
+            print(c.cl)
+            g.solve_points()
         else:
             t.trollface()
     except KeyboardInterrupt:
         exit()
+        print(c.cl)

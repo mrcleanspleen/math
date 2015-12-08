@@ -312,4 +312,22 @@ def solve_inequality():
             no()
     else:
         print("ERROR! ERROR! DOES NOT COMPUTE! KABLOOEY!")
-
+def solve_points():
+    import math
+    """Finds the distance between two points on a graph."""
+    print(c.cl + c.base03 + "Welcome to the Graph Distance solver Machine 9000.")
+    print("(x,y) (x,y)")
+    x1 = input("Please put in the x value of your first point then hit enter. >>> ")
+    y1 = input(c.cl + "Please put in the y value of your first point then hit enter. >>> ")
+    x2 = input(c.cl + "Please put in the x value of your second point then hit enter. >>> ")
+    y2 = input(c.cl + "Please put in the y value of your second point then hit enter. >>> ")
+    x1 = int()
+    y1 = int()
+    x2 = int()
+    y2 = int()
+    x3 = x2 - x1
+    x4 = x3**2
+    y3 = y2 - y1
+    y4 = y3**2
+    answer = math.sqrt(y4 + x4)
+    print(c.cl + "Your answer is : ", answer)
