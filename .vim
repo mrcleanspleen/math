@@ -1,1 +1,0 @@
-/usr/share/skilstak/vim
