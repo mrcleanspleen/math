@@ -9,7 +9,28 @@ def solve_squareroot():
     answer = int
     answer = math.sqrt(i)
     print("square root is",answer)
-
+def solve_distance():
+    print(""" 
+    (x, y) and (x, y)
+    ⇩  ⇩       ⇩  ⇩
+    x1 y1      x2 y2""")
+    xa = input("x1 >>> ")
+    ya = input("y1 >>> ")
+    xb = input("x2 >>> ")
+    yb = input("y2 >>> ")
+    x1 = int(xa)
+    y1 = int(ya)
+    x2 = int(xb)
+    y2 = int(yb)
+    x3 = int
+    x3 = x2 - x1
+    y3 = int
+    y3 = y2 - y1
+    x4 = int
+    x4 = x3 * x3 + y3 * y3
+    x5 = int
+    x5 = math.sqrt(x4)
+    print("Distance between the two points is",x5)
 def solve_slope():
     print(""" 
     (x, y) and (x, y)

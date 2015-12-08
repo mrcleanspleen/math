@@ -45,6 +45,7 @@ def agraph():
 def amisc():
     print(c.cl + """
     pt = pythagorean theorem, 
+    df = find distance between 2 points
     pc = perimeter of a circle,
     sr = square root a number""")
 def intro():
@@ -206,6 +207,9 @@ if __name__ == '__main__':
         elif inpt == "hp":
             print(c.cl)
             s.hexagon()
+        elif inpt == "df":
+            print(c.cl)
+            r.solve_distance()
         else:
             t.trollface()
     except KeyboardInterrupt:
