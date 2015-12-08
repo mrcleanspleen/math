@@ -45,7 +45,7 @@ def trollface():
     .oN0.    .'.      .;ccc;,'....              ....'',;;;;;;;;;;'..   .;oOXX0d:.
     .dN0.      .;;,..       ....                ..''''''''....     .:dOKKko;.
      lNK'         ..,;::;;,'.........................           .;d0X0kc'.
-     .xXO'                                                 .;oOK0x:.
+     .xXO'             Control C to Exit                    .;oOK0x:.
       .cKKo.                                    .,:oxkkkxk0K0xc'.
         .oKKkc,.                         .';cok0XNNNX0Oxoc,.
           .;d0XX0kdlc:;,,,',,,;;:clodkO0KK0Okdl:,'..
