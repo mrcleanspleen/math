@@ -1,44 +1,126 @@
 #!/usr/bin/env python3
 import time as t
 import skilstak.colors as c
-def stuff():
-    print("""
-    pt = pythagorean theorem, 
+def aarea():
+    print(c.cl + """
     c = area of a circle
     s = area of a square, 
-    sp = square pyramid surface area
     tr = area of a triangle
-    pc = perimeter of a circle,
-    y = equation solver, 
-    t = area of a trapezoid
-    ss = system solver, 
-    st for triangular prism surface area
-    sc for cube's surface area, 
-    cu = volume of a cube,
-    rs = rectangle surface area, 
-    sps = surface area of sphere
-    cs = cylinder surface area,
-    sh = volume of a sphere,
-    co = surface area of a cone
-    oc = surface area of a octohedron
-    tp = triangular prism surface area
+    t = area of a trapezoid""")
+def asurface():
+    print(c.cl + """
     hp = hexagonal prism surface area
     rp = rectangular pyramid surface area
-    hs = hemisphere surface area 
+    hs = hemisphere surface area
+    sp = square pyramid surface area
+    st for triangular prism surface area
+    sc for cube surface area, 
+    oc = octohedron surface area
+    rs = rectangular prism surface area, 
+    sps = sphere surface area
+    cs = cylinder surface area,
+    co = cone surface area
+    tp = triangular pyramid surface area""")
+def avolume():
+    print(c.cl + """
+    cu = volume of a cube,
+    vrp = volume of rectangular pyramid
+    vr = volume of rectangular prism
+    sh = volume of a sphere,
+    vtp = volume of a tri pyramid
+    cv = cone volume
+    vsp = square pyramid volume
+    hm = hemisphere volume
+    vh = hexagonal prism volume
+    voc = volume of an octahedron
+    vt = triangular prism volume
+    vc = cylinder volume""")
+def agraph():
+    print(c.cl + """    
+    GRAPHING
+    is = inequality solver
+    y = equation solver, 
+    ss = system solver, 
+    si = system of inequalities""")
+def amisc():
+    print(c.cl + """
+    pt = pythagorean theorem, 
+    pc = perimeter of a circle,
     sr = square root a number""")
-if __name__ == '__main__':
+def intro():
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
-    stuff()
-    inpt = input(">> ")
-    import misc  as r
-    import area as a
-    import surface as s
-    import volume as v
+    print("""What category?
+    v = volume calculators
+    g = graphing calculators
+    m = other/ formulas
+    a = area of 2-D shapes
+    s = surface area calculators
+    """)
+
+if __name__ == '__main__':
     try:
+        intro()
+        category = input(">>> ")
+        if category == "v":
+            avolume()
+        elif category == "g":
+            agraph()
+        elif category == "m":
+            amisc()
+        elif category == "a":
+            aarea()
+        elif category == "s":
+            asurface()
+        else:
+            import troll as t
+            t.trollface()
+        inpt = input(">>> ")
+        import misc  as r
+        import area as a
+        import surface as s
+        import volume as v
+        import graph as g
+        import troll as t
         if inpt == "st":
             """surface area tri prism"""
             print(c.cl)
             s.satriprism()
+        elif inpt == "vc":
+            print(c.cl)
+            v.vcylinder()
+        elif inpt == "voc":
+            print(c.cl)
+            v.voctahedron()
+        elif inpt == "vt":
+            print(c.cl)
+            v.vtriprism()
+        elif inpt == "hm":
+            print(c.cl)
+            v.vhemisphere()
+        elif inpt == "vh":
+            print(c.cl)
+            v.vhexagon()
+        elif inpt == "vtp":
+            print(c.cl)
+            v.vtripyramid()
+        elif inpt == "cv":
+            print(c.cl)
+            v.solve_cone()
+        elif inpt == "vrp":
+            print(c.cl)
+            v.vrectpyramid()
+        elif inpt == "vsp":
+            print(c.cl)
+            v.solve_sqpyramid()
+        elif inpt == "vr":
+            print(c.cl)
+            v.vsolve_rect()
+        elif inpt == "is":
+            print(c.cl)
+            g.solve_inequality()
+        elif inpt == "si":
+            print(c.cl)
+            g.solve_inequality2()
         elif inpt == "oc":
             print(c.cl)
             s.octahedron()
@@ -70,7 +152,7 @@ if __name__ == '__main__':
         elif inpt == "pc":
             """circum. of a circle"""
             print(c.cl)
-            r.solve_perc()
+            r.solve_percircle()
         elif inpt == "sc":
             """surface area cube"""
             print(c.cl)
@@ -94,7 +176,7 @@ if __name__ == '__main__':
         elif inpt == "y":
             print(c.clear)
             """Equation solver"""
-            r.solve_system()
+            g.solve_system()
         elif inpt == "pt":
             """solves A^2 + B^2 = C^2"""
             print(c.clear)
@@ -102,7 +184,7 @@ if __name__ == '__main__':
         elif inpt == "ss":
             """solves a system"""
             print(c.clear)
-            r.solve_system2()
+            g.solve_system2()
         elif inpt == "cu":
             """finds volume of a cube"""
             print(c.cl)
@@ -123,7 +205,6 @@ if __name__ == '__main__':
             print(c.cl)
             s.hexagon()
         else:
-            from peter1 import troll
-            troll()
+            t.trollface()
     except KeyboardInterrupt:
         exit()
