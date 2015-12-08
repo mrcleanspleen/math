@@ -1,7 +1,7 @@
 import skilstak.colors as c
 import time
 import math
-def troll():
+def trollface():
     while True:
         print("""
                                     .....'',;;::cccllllllllllllcccc:::;;,,,''...'',,'..
