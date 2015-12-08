@@ -46,7 +46,9 @@ def amisc():
     print(c.cl + """
     pt = pythagorean theorem, 
     df = find distance between 2 points
-    pc = perimeter of a circle,
+    pc = perimeter of a circle
+    sir = simple interest,
+    ci = compound interest
     sr = square root a number""")
 def intro():
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
@@ -84,10 +86,19 @@ if __name__ == '__main__':
         import volume as v
         import graph as g
         import troll as t
-        if inpt == "st":
+        if inpt == "---":
+            print(c.cl)
+            exit()
+        elif inpt == "ci":
+            print(c.cl)
+            r.solve_interest()
+        elif inpt == "st":
             """surface area tri prism"""
             print(c.cl)
             s.satriprism()
+        elif inpt == "sir":
+            print(c.cl)
+            r.solve_interest()
         elif inpt == "vc":
             print(c.cl)
             v.vcylinder()

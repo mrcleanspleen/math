@@ -114,4 +114,36 @@ def solve_py():
         ab11 = a1 + b1
         c = math.sqrt(ab11)
         print("c value is",c)
+def solve_interest():
+    p = input("How much money did you borrow / invest ? >>> ")
+    r = input("What was the interest rate in percent (Must be at least 1) >>> ")
+    t = input("How many years did you borrow for? >>> ")
+    pp = int(p)
+    rr = int(r)
+    tt = int(t)
+    rrr = int
+    rrr = rr / 100
+    a = int
+    a = pp * rrr * tt
+    print("Interest amount is",a)
+    b = int
+    b = a + pp
+    print("You now owe",b)
+def solve_compound():
+    p = input("How much money did you borrow / invest ? >>> ")
+    r = input("What was the interest rate in percent >>> ")
+    t = input("How many years did you borrow for? >>> ")
+    pp = int(p)
+    rr = int(r)
+    tt = int(t)
+    z = int 
+    z = rr / 100
+    x = int
+    x = 1 + z
+    y = int
+    y = x**tt 
+    b = int
+    b = y + pp
+    print("Interest is",y)
+    print("You now owe",b)
 
