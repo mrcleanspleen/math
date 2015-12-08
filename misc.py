@@ -10,6 +10,27 @@ def solve_squareroot():
     answer = math.sqrt(i)
     print("square root is",answer)
 
+def solve_slope():
+    print(""" 
+    (x, y) and (x, y)
+    ⇩  ⇩       ⇩  ⇩
+    x1 y1      x2 y2""")
+    xa = input("x1 >>> ")
+    ya = input("y1 >>> ")
+    xb = input("x2 >>> ")
+    yb = input("y2 >>> ")
+    x1 = int(xa)
+    y1 = int(ya)
+    x2 = int(xb)
+    y2 = int(yb)
+    y3 = int
+    y3 = y2 - y1
+    x3 = int
+    x3 = x2 - x1
+    yx = int
+    yx = y3 / x3
+    print("Slope is",yx)
+
 def solve_percircle():
 
     b = input("radius >>> ")
@@ -17,15 +38,6 @@ def solve_percircle():
     a = int
     a = 3.14 * 2 * c
     print(a)
-def solve_slope():
-    print(""" (x, y) and (x, y)
-               ⇩  ⇩       ⇩  ⇩
-               x1 y1      x2 y2""")
-    xa = input("x1 >>> ")
-    ya = input("y1 >>> ")
-    xb = input("x2 >>> ")
-    yb = input("y2 >>> ")
-    x1 = int(xa)
 def solve_py():
     print("""
              |\ 

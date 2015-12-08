@@ -3,7 +3,7 @@ import time
 import math
 def trollface():
     while True:
-        print("""
+        print(c.multi("""
                                     .....'',;;::cccllllllllllllcccc:::;;,,,''...'',,'..
                             ..';cldkO00KXNNNNXXXKK000OOkkkkkxxxxxddoooddddddxxxxkkkkOO0XXKx:.
                       .':ok0KXXXNXK0kxolc:;;,,,,,,,,,,,;;,,,''''''',,''..              .'lOXKd'
@@ -50,6 +50,6 @@ def trollface():
         .oKKkc,.                         .';cok0XNNNX0Oxoc,.
           .;d0XX0kdlc:;,,,',,,;;:clodkO0KK0Okdl:,'..
               .,coxO0KXXXXXXXKK0OOxdoc:,..
-                        ...""")
+                        ..."""))
         time.sleep(2)
         print(c.cl)
