@@ -141,7 +141,7 @@ def solve_compound():
     x = int
     x = 1 + z
     y = int
-    y = x**tt 
+    y = x ** tt 
     b = int
     b = y + pp
     print("Interest is",y)
