@@ -132,18 +132,24 @@ def solve_interest():
 def solve_compound():
     p = input("How much money did you borrow / invest ? >>> ")
     r = input("What was the interest rate in percent >>> ")
-    t = input("How many years did you borrow for? >>> ")
+    t = input("How many years did you borrow/invest for? >>> ")
     pp = int(p)
     rr = int(r)
     tt = int(t)
-    z = int 
-    z = rr / 100
+
+    """A = pp(1 + rr/1)^tt"""
+    100rr = int
+    1rr = int
+    2rr = int
+    tr = int
+    100rr = rr / 100
+    1rr = 100rr / 1
+    2rr = 1 + 1rr
+    tr = 2rr ** tt
     x = int
-    x = 1 + z
+    x = z + 1
     y = int
     y = x ** tt 
-    b = int
-    b = y + pp
     print("Interest is",y)
-    print("You now owe",b)
+    print("You now owe",y + pp)
 
