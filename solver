@@ -40,7 +40,7 @@ def agraph():
     GRAPHING
     is = inequality solver
     y = equation solver, 
-    ss = system solver, 
+    ss = system solver,
     si = system of inequalities""")
 
 def amisc():
@@ -81,7 +81,7 @@ if __name__ == '__main__':
                 aarea()
             elif category == "s":
                 asurface()
-            elif category == "x"
+            elif category == "x":
                 print(c.cl)
                 exit()
             elif category == "n":
@@ -261,12 +261,9 @@ https://www.google.com/search?espv=2&q=google+calculator&oq=google+cal
                 """find distance between two points"""
                 print(c.cl)
                 r.solve_distance()
-            elif inpt == "spt":
-                print(c.cl)
-                g.solve_points()
             else:
                 """best troll ever"""
                 t.trollface()
-        except KeyboardInterrupt:
-            exit()
-            print(c.cl)
+    except KeyboardInterrupt:
+        exit()
+        print(c.cl)
