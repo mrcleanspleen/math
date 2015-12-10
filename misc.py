@@ -153,10 +153,10 @@ def solve_compound():
     y = tr * pp
     print("You now have / owe",y)
 def power():
-    a = input(c.green + " ? " + c.x + "^ ?" >>> )
-    b = input(a + c.green + "^ ?" + c.x >>> )
+    a = input(c.green + " ? " + c.x + "^ ? >>> ")
+    b = input(a + " ^ " + c.green + "?" + c.x + " >>> ")
     aa = int(a)
     bb = int(b)
-    c = int
-    c = aa ** bb
-    print("Your number is",c)
+    d = int
+    d = aa ** bb
+    print("Your number is",d)
