@@ -133,6 +133,8 @@ def solve_compound():
     p = input("How much money did you borrow / invest ? >>> ")
     r = input("What was the interest rate in percent >>> ")
     t = input("How many years did you borrow/invest for? >>> ")
+    v = input("How many times a year was it compounded? >>> ")
+    vv = int(v)
     pp = int(p)
     rr = int(r)
     tt = int(t)
@@ -142,13 +144,12 @@ def solve_compound():
     rr2 = int
     tr = int
     rr10 = rr / 100
-    print(rr10)
-    rr1 = rr10 / 1
+    rr1 = rr10 / vv
     rr2 = 1 + rr1
-    print(rr2)
-    tr = rr2 ** tt
-    print(tr)
+    tv = int
+    tv = tt * vv
+    tr = rr2 ** tv
     y = int
     y = tr * pp
-    print("Interest is",y)
+    print("You now have / owe",y)
 

@@ -91,7 +91,7 @@ if __name__ == '__main__':
             exit()
         elif inpt == "ci":
             print(c.cl)
-            r.solve_interest()
+            r.solve_compound()
         elif inpt == "st":
             """surface area tri prism"""
             print(c.cl)
