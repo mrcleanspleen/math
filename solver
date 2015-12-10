@@ -42,6 +42,7 @@ def agraph():
     y = equation solver, 
     ss = system solver, 
     si = system of inequalities""")
+
 def amisc():
     print(c.cl + """
     pt = pythagorean theorem, 
@@ -51,6 +52,7 @@ def amisc():
     ci = compound interest
     pow = exponents and powers
     sr = square root a number""")
+
 def intro():
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
     print("""What category?
@@ -59,6 +61,8 @@ def intro():
     m = other/ formulas
     a = area of 2-D shapes
     s = surface area calculators
+    n = number calculators
+
     """)
 
 if __name__ == '__main__':
@@ -75,11 +79,16 @@ if __name__ == '__main__':
             aarea()
         elif category == "s":
             asurface()
+        elif category == "n":
+            print("Copy this into your browser")
+            print("""
+https://www.google.com/search?espv=2&q=google+calculator&oq=google+cal
+&gs_l=serp.1.1.0i131j0i20j0i10j0j0i131l2j0l4.51023.53960.0.55414.13.12.1.0.0.0.126.1233
+.4j8.12.0....0...1c.1.64.serp..1.12.1159.0.ZZaV1XeCKhw""")
         else:
             import troll as t
             t.trollface()
             time.sleep(3)
-            exit()
         inpt = input(">>> ")
         import misc  as r
         import area as a
