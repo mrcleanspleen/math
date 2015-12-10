@@ -136,20 +136,19 @@ def solve_compound():
     pp = int(p)
     rr = int(r)
     tt = int(t)
-
     """A = pp(1 + rr/1)^tt"""
-    100rr = int
-    1rr = int
-    2rr = int
+    rr10 = int
+    rr1 = int
+    rr2 = int
     tr = int
-    100rr = rr / 100
-    1rr = 100rr / 1
-    2rr = 1 + 1rr
-    tr = 2rr ** tt
-    x = int
-    x = z + 1
+    rr10 = rr / 100
+    print(rr10)
+    rr1 = rr10 / 1
+    rr2 = 1 + rr1
+    print(rr2)
+    tr = rr2 ** tt
+    print(tr)
     y = int
-    y = x ** tt 
+    y = tr * pp
     print("Interest is",y)
-    print("You now owe",y + pp)
 
