@@ -49,6 +49,7 @@ def amisc():
     pc = perimeter of a circle
     sir = simple interest,
     ci = compound interest
+    pow = exponents and powers
     sr = square root a number""")
 def intro():
     print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
@@ -92,6 +93,9 @@ if __name__ == '__main__':
         elif inpt == "ci":
             print(c.cl)
             r.solve_compound()
+        elif inpt == "pow":
+            print(c.cl)
+            r.power()
         elif inpt == "st":
             """surface area tri prism"""
             print(c.cl)
