@@ -23,6 +23,7 @@ if __name__ == '__main__':
             import troll as t
             o.intro()
             category = input(">>> ")
+            """Get's user input from category"""
             if category == "v":
                 o.avolume()
             elif category == "g":
@@ -38,6 +39,11 @@ if __name__ == '__main__':
                 exit()
             elif category == "n":
                 o.google()
+            elif category == "i":
+                print("Type what you want to be added");
+                x = 'user.txt'
+                with open (x, "w") as f:
+                      f.write (input ());
             else:
                 t.trollface()
                 time.sleep(3)
@@ -206,7 +212,8 @@ if __name__ == '__main__':
                 r.solve_distance()
             else:
                 """best troll ever"""
-                t.trollface()
+                print(c.cl)
+                exit()
     except KeyboardInterrupt:
         exit()
         print(c.cl)
