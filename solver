@@ -1,48 +1,6 @@
 #!/usr/bin/env python3
 import time 
 import skilstak.colors as c
-def aarea():
-    print(c.cl + """
-    c = area of a circle
-    s = area of a square, 
-    tr = area of a triangle
-    t = area of a trapezoid""")
-def asurface():
-    print(c.cl + """
-    hp = hexagonal prism surface area
-    rp = rectangular pyramid surface area
-    hs = hemisphere surface area
-    sp = square pyramid surface area
-    st for triangular prism surface area
-    sc for cube surface area, 
-    oc = octohedron surface area
-    rs = rectangular prism surface area, 
-    sps = sphere surface area
-    cs = cylinder surface area,
-    co = cone surface area
-    tp = triangular pyramid surface area""")
-def avolume():
-    print(c.cl + """
-    cu = volume of a cube,
-    vrp = volume of rectangular pyramid
-    vr = volume of rectangular prism
-    sh = volume of a sphere,
-    vtp = volume of a tri pyramid
-    cv = cone volume
-    vsp = square pyramid volume
-    hm = hemisphere volume
-    vh = hexagonal prism volume
-    voc = volume of an octahedron
-    vt = triangular prism volume
-    vc = cylinder volume""")
-def agraph():
-    print(c.cl + """    
-    GRAPHING
-    is = inequality solver
-    y = equation solver, 
-    ss = system solver,
-    si = system of inequalities""")
-
 def amisc():
     print(c.cl + """
     pt = pythagorean theorem, 
@@ -53,54 +11,39 @@ def amisc():
     pow = exponents and powers
     sr = square root a number""")
 
-def intro():
-    print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
-    print("""What category?
-    v = volume calculators
-    g = graphing calculators
-    m = other/ formulas
-    a = area of 2-D shapes
-    s = surface area calculators
-    n = number calculators
-    x to exit
-
-    """)
-
 if __name__ == '__main__':
     try:
         while True:
-            intro()
-            category = input(">>> ")
-            if category == "v":
-                avolume()
-            elif category == "g":
-                agraph()
-            elif category == "m":
-                amisc()
-            elif category == "a":
-                aarea()
-            elif category == "s":
-                asurface()
-            elif category == "x":
-                print(c.cl)
-                exit()
-            elif category == "n":
-                print("Copy this into your browser")
-                print("""
-https://www.google.com/search?espv=2&q=google+calculator&oq=google+cal
-&gs_l=serp.1.1.0i131j0i20j0i10j0j0i131l2j0l4.51023.53960.0.55414.13.12.1.0.0.0.126.1233
-.4j8.12.0....0...1c.1.64.serp..1.12.1159.0.ZZaV1XeCKhw""")
-            else:
-                import troll as t
-                t.trollface()
-                time.sleep(3)
-            inpt = input(">>> ")
+            import options as o 
             import misc  as r
             import area as a
             import surface as s
             import volume as v
             import graph as g
             import troll as t
+            o.intro()
+            category = input(">>> ")
+            if category == "v":
+                o.avolume()
+            elif category == "g":
+                o.agraph()
+            elif category == "m":
+                o.amisc()
+            elif category == "a":
+                o.aarea()
+            elif category == "s":
+                o.asurface()
+            elif category == "x":
+                print(c.cl)
+                exit()
+            elif category == "n":
+                o.google()
+            else:
+                t.trollface()
+                time.sleep(3)
+
+
+            inpt = input(">>> ")
             if inpt == "---":
                 """gets messed up by troll, so is never supposed to be typed"""
                 print(c.cl)
