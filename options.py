@@ -10,6 +10,7 @@ def intro():
     a = area of 2-D shapes
     s = surface area calculators
     n = number calculators
+    i = suggest something to add
     x to exit
 
     """)
