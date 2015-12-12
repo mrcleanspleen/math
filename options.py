@@ -2,7 +2,7 @@
 import skilstak.colors as c
 
 def intro():
-    print(c.clear + c.multi("Welcome to the Ultimate Calculator") + c.x)
+    print(c.multi("Welcome to the Ultimate Calculator") + c.x)
     print("""What category?
     v = volume calculators
     g = graphing calculators
