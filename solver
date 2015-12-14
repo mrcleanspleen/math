@@ -41,6 +41,10 @@ if __name__ == '__main__':
                 """compound interest"""
                 print(c.cl)
                 r.solve_compound()
+            elif inpt == "mf":
+                """multiplies fractions"""
+                print(c.cl)
+                r.mulfrac()
             elif inpt == "pow":
                 """use exponents and powers"""
                 print(c.cl)
@@ -149,6 +153,10 @@ if __name__ == '__main__':
                 """area of a square"""
                 print(c.clear)
                 a.solve_square()
+            elif inpt == "df":
+                """divides fractions"""
+                print(c.cl)
+                r.divfrac()
             elif inpt == "tr":
                 """area of a triangle"""
                 print(c.clear)

@@ -160,6 +160,34 @@ def power():
     d = int
     d = aa ** bb
     print("Your number is",d)
+def mulfrac():
+    a = input("( " + c.green + "?" + c.x + " / ?) * ( ? / ? ) >>> ")
+    b = input("( " + a + c.x + " /" + c.green + " ? " + c.x + ") * ( ? / ? ) >>> ")
+    c1 = input("( " + a + c.x + " /" + b + ") * (" + c.green + " ? " + c.x + "/ ? ) >>> ")
+    d = input("( " + a + c.x + " / " + b + ") * (" + c1 + " /" + c.green + " ? " + c.x + ") >>> ")
+    a1 = int(a)
+    b1 = int(b)
+    c2 = int(c1)
+    d1 = int(d)
+    x = int
+    x = a1 * c2
+    y = int
+    y = b1 * d1
+    print("Your fraction is",x,"/",y)
+def divfrac():
+    a = input("( " + c.green + "?" + c.x + " / ?) / ( ? / ? ) >>> ")
+    b = input("( " + a + c.x + " /" + c.green + " ? " + c.x + ") / ( ? / ? ) >>> ")
+    c1 = input("( " + a + c.x + " / " + b + " ) / (" + c.green + " ? " + c.x + "/ ? ) >>> ")
+    d = input("( " + a + c.x + " / " + b + " ) / ( " + c1 + " /" + c.green + " ? " + c.x + ") >>> ")
+    a1 = int(a)
+    b1 = int(b)
+    c2 = int(c1)
+    d1 = int(d)
+    x = int
+    x = a1 * d1
+    y = int
+    y = b1 * c2
+    print("Your fraction is",x,"/",y)
 def user():
     print("Type what you want to be added, then type anything");
     x = 'user.txt'

@@ -71,5 +71,7 @@ def amisc():
     pc = perimeter of a circle
     sir = simple interest,
     ci = compound interest
+    df = divide fractions
+    mf = multiply fractions
     pow = exponents and powers
     sr = square root a number""")
