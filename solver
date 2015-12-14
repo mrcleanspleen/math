@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 import time 
 import skilstak.colors as c
-def amisc():
-    print(c.cl + """
-    pt = pythagorean theorem, 
-    df = find distance between 2 points
-    pc = perimeter of a circle
-    sir = simple interest,
-    ci = compound interest
-    pow = exponents and powers
-    sr = square root a number""")
 
 if __name__ == '__main__':
     try:

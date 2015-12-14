@@ -64,3 +64,12 @@ https://www.google.com/search?espv=2&q=google+calculator&oq=google+cal
 def exiting():
     print(c.clear + c.multi("Thanks for using the ultimate calculator"))
     exit()
+def amisc():
+    print(c.cl + """
+    pt = pythagorean theorem, 
+    df = find distance between 2 points
+    pc = perimeter of a circle
+    sir = simple interest,
+    ci = compound interest
+    pow = exponents and powers
+    sr = square root a number""")
