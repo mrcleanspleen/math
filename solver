@@ -204,9 +204,8 @@ if __name__ == '__main__':
                 print(c.cl)
                 r.solve_distance()
             else:
-                """best troll ever"""
-                print(c.cl)
-                exit()
+                """exits the program"""
+                o.exiting()
     except KeyboardInterrupt:
-        exit()
         print(c.cl)
+        exit()
