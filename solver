@@ -36,20 +36,17 @@ if __name__ == '__main__':
             elif category == "s":
                 o.asurface()
             elif category == "x":
-                print(c.cl)
-                exit()
+                o.exiting()
             elif category == "n":
                 o.google()
             elif category == "i":
                 r.user()
             else:
                 t.trollface()
-
             inpt = input(">>> ")
             if inpt == "---explode---":
                 """gets messed up by troll, so is never supposed to be typed"""
-                print(c.cl)
-                exit()
+                o.exiting()
             elif inpt == "ci":
                 """compound interest"""
                 print(c.cl)

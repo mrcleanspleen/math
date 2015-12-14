@@ -61,3 +61,6 @@ def google():
 https://www.google.com/search?espv=2&q=google+calculator&oq=google+cal
 &gs_l=serp.1.1.0i131j0i20j0i10j0j0i131l2j0l4.51023.53960.0.55414.13.12.1.0.0.0.126.1233
 .4j8.12.0....0...1c.1.64.serp..1.12.1159.0.ZZaV1XeCKhw""")
+def exiting():
+    print(c.clear + c.multi("Thanks for using the ultimate calculator"))
+    exit()
