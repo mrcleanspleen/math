@@ -163,8 +163,8 @@ def power():
 def mulfrac():
     a = input("( " + c.green + "?" + c.x + " / ?) * ( ? / ? ) >>> ")
     b = input("( " + a + c.x + " /" + c.green + " ? " + c.x + ") * ( ? / ? ) >>> ")
-    c1 = input("( " + a + c.x + " /" + b + ") * (" + c.green + " ? " + c.x + "/ ? ) >>> ")
-    d = input("( " + a + c.x + " / " + b + ") * (" + c1 + " /" + c.green + " ? " + c.x + ") >>> ")
+    c1 = input("( " + a + c.x + " / " + b + " ) * (" + c.green + " ? " + c.x + "/ ? ) >>> ")
+    d = input("( " + a + c.x + " / " + b + ") * ( " + c1 + " /" + c.green + " ? " + c.x + ") >>> ")
     a1 = int(a)
     b1 = int(b)
     c2 = int(c1)
@@ -175,7 +175,7 @@ def mulfrac():
     y = b1 * d1
     print("Your fraction is",x,"/",y)
 def divfrac():
-    a = input("( " + c.green + "?" + c.x + " / ?) / ( ? / ? ) >>> ")
+    a = input("( " + c.green + "? " + c.x + " / ?) / ( ? / ? ) >>> ")
     b = input("( " + a + c.x + " /" + c.green + " ? " + c.x + ") / ( ? / ? ) >>> ")
     c1 = input("( " + a + c.x + " / " + b + " ) / (" + c.green + " ? " + c.x + "/ ? ) >>> ")
     d = input("( " + a + c.x + " / " + b + " ) / ( " + c1 + " /" + c.green + " ? " + c.x + ") >>> ")
