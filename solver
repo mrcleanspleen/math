@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import time 
 import skilstak.colors as c
-
 if __name__ == '__main__':
     try:
         while True:
