@@ -160,3 +160,8 @@ def power():
     d = int
     d = aa ** bb
     print("Your number is",d)
+def user():
+    print("Type what you want to be added, then type anything");
+    x = 'user.txt'
+    with open (x, "w") as f:
+        f.write (input (">>> "));

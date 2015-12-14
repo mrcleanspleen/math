@@ -22,6 +22,7 @@ if __name__ == '__main__':
             import graph as g
             import troll as t
             o.intro()
+            """Lists all categories avaliable to the user"""
             category = input(">>> ")
             """Get's user input from category"""
             if category == "v":
@@ -40,17 +41,12 @@ if __name__ == '__main__':
             elif category == "n":
                 o.google()
             elif category == "i":
-                print("Type what you want to be added");
-                x = 'user.txt'
-                with open (x, "w") as f:
-                      f.write (input ());
+                r.user()
             else:
                 t.trollface()
-                time.sleep(3)
-
 
             inpt = input(">>> ")
-            if inpt == "---":
+            if inpt == "---explode---":
                 """gets messed up by troll, so is never supposed to be typed"""
                 print(c.cl)
                 exit()
