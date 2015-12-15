@@ -2,6 +2,19 @@ import skilstak.colors as c
 import time as t
 import math
 import time as t
+def choose_graph():
+    print(c.cl + """    
+    GRAPHING
+    is = inequality solver
+    y = equation solver, 
+    ss = system solver,
+    si = system of inequalities""")
+    inpt = input(">>> ")
+    if inpt = "is":
+        solve_inequality()
+    elif inpt = "y":
+        solve_    
+
 def solve_system():
     print("y = 1y,x = 1x,")
     print("No decimals, fractions, or 0/undefined slopes.")
