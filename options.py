@@ -41,8 +41,8 @@ def asurface():
     rp = rectangular pyramid surface area
     hs = hemisphere surface area
     sp = square pyramid surface area
-    st for triangular prism surface area
-    sc for cube surface area, 
+    st = triangular prism surface area
+    sc = cube surface area, 
     oc = octohedron surface area
     rs = rectangular prism surface area, 
     sps = sphere surface area
