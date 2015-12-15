@@ -2,39 +2,35 @@
 import skilstak.colors as c
 import math
 def sacube():
-    a = input("What is one side's length of the cube? >>> ")
-    b = int(a)
-    c = int
-    c = b * b * 6
-    print("The surface area of the cube is",c)
+    a = int(input("What is one side's length of the cube? >>> "))
+    b = int
+    b = a * a * 6
+    print("The surface area of the cube is",b)
 def satriprism():
     q = input("y = right triangle, n otherwise >>> ")
-    if q == "y":    
-        a = input("Base of triangle >>> ")
-        b = input("Height of triangle >>> ")
-        c = input("Length of Triangular Prism >>> ")
-        a1 = int(a)
-        b1 = int(b)
-        c1 = int(c)
+    if q == "y":
+        a = int(input("Base of triangle >>> "))
+        b = int(input("Height of triangle >>> "))
+        c = int(input("Length of Triangular Prism >>> "))
         a2 = int
         b2 = int
         ab2 = int
-        ab3 = int
+        d = int
         w = int
-        w = a1 * b1
-        a2 = a1 * a1
-        b2 = b1 * b1
+        w = a * b
+        a2 = a * a
+        b2 = b * b
         ab2 = a2 + b2
-        ab3 = math.sqrt(ab2)
+        d = math.sqrt(ab2)
         abc3 = int
-        abc3 = ab3 * c1
+        abc3 = d * c
         ac = int
         ab = int
-        ac = a1 * c1
-        ab = b1 * c1
+        ac = a * c
+        ab = b * c
         r = int
         r = ac + ab + abc3 + w
-        print("Surface area of triangular prism is ≈",r)
+        print("Surface area of triangular prism is ",r)    
     elif q == "n":
         print("""
                /\ 

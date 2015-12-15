@@ -66,8 +66,7 @@ def solve_system():
         
 def solve_system2():
     import skilstak.colors as c
-    print(c.clear + c.x + "Welcome to the system pinpoint device.")
-    print("1.Make sure you have 2 Systems")
+    print("1.Make sure you have 2 Equations")
     print("2.Make sure they are in Ax+By Form")
     print("3.Make sure you have no fractions or decimals")
     print("4.Make sure you have no undefined or zero slopes")
