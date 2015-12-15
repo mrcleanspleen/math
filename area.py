@@ -13,9 +13,7 @@ def solve_square():
 
 def solve_circle():
     """Finds the area of a circle based on its radius"""
-    radius = input("What is the radius of your circle? >>> ")
-    x = int(radius)
-    answer = int()    
+    x = int(input("What is the radius of your circle? >>> "))
     answer = x * x * 3.14
     print("Your answer is : " + str(answer))
 
