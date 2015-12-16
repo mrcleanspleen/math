@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
 import math
+def solve_paint():
+    
 def sacube():
     a = int(input("What is one side's length of the cube? >>> "))
     b = int
-    b = a * a * 6
+    answer = a * a * 6
     print("The surface area of the cube is",b)
 def satriprism():
     q = input("y = right triangle, n otherwise >>> ")
