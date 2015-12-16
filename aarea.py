@@ -1,6 +1,23 @@
 #!/usr/bin/env/python3
 import skilstak.colors as c
 import math
+def choose_area():
+    print(c.cl + """
+    c = area of a circle
+    s = area of a square, 
+    tr = area of a triangle
+    t = area of a trapezoid""")
+    inpt = input(">>> ")
+    if inpt = "s":
+        solve_square()
+    elif inpt = "c":
+        solve_circle()
+    elif inpt = "tr":
+        solve_triange()
+    elif inpt = "t":
+        solve_trapazoid()
+    else:
+        print(c.cl + "Human. Y you do dis.")
 def solve_square():
     """Finds the area of a square based on its height"""
     x = int(input("What is the height of your square? >>> "))
