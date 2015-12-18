@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
-import math
-def solve_paint():
-    
+import math    
 def sacube():
     a = int(input("What is one side's length of the cube? >>> "))
     b = int
