@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
+def welcome():
+    print(c.clear + c.multi(""" 
+                                                                                                                                     __ 
+     _ _ _     _                      _          _   _              _ _   _           _                      _     _     _          |  |
+    | | | |___| |___ ___ _____ ___   | |_ ___   | |_| |_ ___    _ _| | |_|_|_____ ___| |_ ___    ___ ___ ___| |_ _| |___| |_ ___ ___|  |
+    | | | | -_| |  _| . |     | -_|  |  _| . |  |  _|   | -_|  | | | |  _| |     | .'|  _| -_|  |  _| .'|  _| | | | | .'|  _| . |  _|__|
+    |_____|___|_|___|___|_|_|_|___|  |_| |___|  |_| |_|_|___|  |___|_|_| |_|_|_|_|__,|_| |___|  |___|__,|___|_|___|_|__,|_| |___|_| |__|
+    """))                                                                                                                                    
 
 def intro():
-    print(c.multi("Welcome to the Ultimate Calculator") + c.x)
     print("""What category?
     v = volume calculators
     g = graphing calculators
@@ -62,7 +69,8 @@ https://www.google.com/search?espv=2&q=google+calculator&oq=google+cal
 &gs_l=serp.1.1.0i131j0i20j0i10j0j0i131l2j0l4.51023.53960.0.55414.13.12.1.0.0.0.126.1233
 .4j8.12.0....0...1c.1.64.serp..1.12.1159.0.ZZaV1XeCKhw""")
 def exiting():
-    print(c.clear + c.multi("Thanks for using the ultimate calculator"))
+    print(c.clear + c.multi("Thanks for using the ultimate calculator!"))
+    print(c.x + "Come again soon!")
     exit()
 def amisc():
     print(c.cl + """

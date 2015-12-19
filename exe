@@ -3,9 +3,9 @@ import time
 import skilstak.colors as c
 if __name__ == '__main__':
     try:
-        zw = 0
+        import options as o
+        o.welcome()
         while True:
-            import options as o 
             import misc  as r
             import area as a
             import surface as s
