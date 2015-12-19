@@ -3,6 +3,7 @@ import time
 import skilstak.colors as c
 if __name__ == '__main__':
     try:
+        zw = 0
         while True:
             import options as o 
             import misc  as r
