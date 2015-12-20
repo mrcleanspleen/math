@@ -82,5 +82,6 @@ def amisc():
     ci = compound interest
     df = divide fractions
     mf = multiply fractions
+    mul = multiply numbers
     pow = exponents and powers
     sr = square root a number""")

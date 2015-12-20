@@ -12,6 +12,7 @@ if __name__ == '__main__':
             import volume as v
             import graph as g
             import troll as t
+            import stupid as d
             o.intro()
             """Lists all categories avaliable to the user"""
             category = input(">>> ")
@@ -42,6 +43,9 @@ if __name__ == '__main__':
                 """compound interest"""
                 print(c.cl)
                 r.solve_compound()
+            elif inpt == "mul":
+                print(c.cl)
+                d.mult()
             elif inpt == "mf":
                 """multiplies fractions"""
                 print(c.cl)
