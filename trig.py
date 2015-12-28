@@ -61,9 +61,8 @@ def hyptrig()
             """z = radians"""
             """cross multiplies/ cancels hypotenuse with sin, to find side length of 'opposite', the side across from the hypotenuse"""
             r = float(h * answer)
-            
             """(a)up & down is" = r"""
-            print(
+            print(r,"is vertical")
             """solves for 'b' using pythagoream theorem"""
             r2 = float(r * r)
             h2 = int(h * h)
@@ -71,8 +70,9 @@ def hyptrig()
             if b2 == 0:
                 bz = int(0)
                 b = round(bz,4)
-                print("b is",b)
+                print("impossible triangle")
             else:
                 bz = abs(math.sqrt(b2))
                 b = round(bz,4)
+                print("horizontal is",b)
                 """b is b """
