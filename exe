@@ -54,7 +54,7 @@ if __name__ == '__main__':
             elif inpt == "sin":
                 print(c.cl)
                 i.degtrig()
-            elif inpt == "hyp":
+            elif inpt == "pts":
                 print(c.cl)
                 i.hyp()
             elif inpt == "ci":
