@@ -34,12 +34,19 @@ if __name__ == '__main__':
                 o.google()
             elif category == "i":
                 r.user()
+            elif category == "t":
+                o.trig()
             else:
                 t.trollface()
             inpt = input(">>> ")
             if inpt == "---explode---":
                 """gets messed up by troll, so is never supposed to be typed"""
                 o.exiting()
+            elif inpt == "rd":
+                i.raddeg()
+            elif inpt == "dr":
+                i.degrad()
+            elif inpt == 
             elif inpt == "ci":
                 """compound interest"""
                 print(c.cl)

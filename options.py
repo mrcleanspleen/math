@@ -2,8 +2,11 @@
 import skilstak.colors as c
 def trig():
     print(c.cl + """
+cos = cos solver
+sin = sin solver
+pts = find all sides of a triagle from hyp length and angle
 rd = radians to degrees
-dr= degrees to radians""")
+dr = degrees to radians""")
 def welcome():
     print(c.clear + c.multi(""" 
                                                                                                                                  
@@ -21,8 +24,9 @@ def intro():
     m = other/ formulas
     a = area of 2-D shapes
     s = surface area calculators
-    n = number calculators
+    n = number calculator
     i = suggest something to add
+    t = trig calc
     x to exit
 
     """)

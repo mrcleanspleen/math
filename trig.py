@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import math
 import skilstak.colors as sc
-        m = input("Type 'pi' for default 3.14, Otherwise set pi value. > ")
-        if m == "pi":
 def degtrig():
     pi = float(3.14)
     deg = float(input("degrees > "))
@@ -40,7 +38,7 @@ def degrad():
     pi = float(3.14)
     rad = float(deg * (pi/180))
     print("You have",rad,"Radians")
-def hyptrig():
+def hyp():
     """Sin = answer"""
     """answer is sin of the angle"""
     pi = float(3.14)
