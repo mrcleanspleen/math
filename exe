@@ -43,10 +43,20 @@ if __name__ == '__main__':
                 """gets messed up by troll, so is never supposed to be typed"""
                 o.exiting()
             elif inpt == "rd":
+                print(c.cl)
                 i.raddeg()
             elif inpt == "dr":
+                print(c.cl)
                 i.degrad()
-            elif inpt == 
+            elif inpt == "cos":
+                print(c.cl)
+                i.cos()
+            elif inpt == "sin":
+                print(c.cl)
+                i.degtrig()
+            elif inpt == "hyp":
+                print(c.cl)
+                i.hyp()
             elif inpt == "ci":
                 """compound interest"""
                 print(c.cl)
