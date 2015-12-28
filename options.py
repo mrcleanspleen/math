@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
+def trig():
+    print(c.cl + """
+rd = radians to degrees
+dr= degrees to radians""")
 def welcome():
     print(c.clear + c.multi(""" 
                                                                                                                                  

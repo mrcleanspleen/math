@@ -13,20 +13,21 @@ if __name__ == '__main__':
             import graph as g
             import troll as t
             import stupid as d
+            import trig as i
             o.intro()
             """Lists all categories avaliable to the user"""
             category = input(">>> ")
             """Get's user input from category"""
             if category == "v":
-                o.avolume()
+                o.volume()
             elif category == "g":
-                o.agraph()
+                o.graph()
             elif category == "m":
-                o.amisc()
+                o.misc()
             elif category == "a":
-                o.aarea()
+                o.area()
             elif category == "s":
-                o.asurface()
+                o.surface()
             elif category == "x":
                 o.exiting()
             elif category == "n":
