@@ -1,11 +1,34 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
 import math
+def paint_cost():
+    """Determines how much it would cost to paint the outside surface of an
+    object based on surface area, cost per gallon, and how much 1 gallon
+    of paint covers, in sq. ft.
+    """
+    q = input("Do you want to sove how much it will cost to paint the surface of the object? >>> ")
+    if ["yes","y","sure"] in q:
+        print(c.cl + "What is the surface area of the object?")
+        sa = int(input(">>> "))
+        print(c.cl + "How many sq. units can one gallon cover?")
+        g = int(input(">>> "))
+        print(c.cl + "How much does one gallon cost?")
+        c = int(input(">>> "))
+        sa = float()
+        g = float()
+        c = float()
+        cv = sa/ g
+        c1 = cv * c
+        print(c.cl + "It would cost $" + str(c1) + " to paint")
+    else:
+        print(c.cl + "Oh. I guess I'll leave now.")
+        exit()
 def sacube():
     a = int(input("What is one side's length of the cube? >>> "))
     b = int
     b = a * a * 6
     print("The surface area of the cube is",b)
+    paint_cost()
 def satriprism():
     q = input("y = right triangle, n otherwise >>> ")
     if q == "y":
@@ -30,7 +53,8 @@ def satriprism():
         ab = b * c
         r = int
         r = ac + ab + abc3 + w
-        print("Surface area of triangular prism is ",r)    
+        print("Surface area of triangular prism is ",r)
+        paint_cost()
     elif q == "n":
         print("""
                /\ 
@@ -73,6 +97,7 @@ def satriprism():
             p2 = p1 * uu
             bp = b3 + p2
             print("surface areas is ≈",bp)
+            paint_cost()
 def rectsurface():
     l = input("Length >>> ")
     w = input("Width >>> ")
@@ -91,6 +116,7 @@ def rectsurface():
     total1 = int
     total1 = 2 * total
     print("Surface area is",total1)
+    paint_cost()
 def spheresurface():
     r = input("radius >>> ")
     rr = int(r)
@@ -100,6 +126,7 @@ def spheresurface():
     a = int
     a = rrr * 4 * 3.14
     print("Surface area is",a)
+    paint_cost()
 def cylindersurface():
     r = input("radius >>> ")
     h = input("height >>> ")
@@ -113,6 +140,7 @@ def cylindersurface():
     qu = int
     qu = u + q
     print("Surface area is",qu)
+    paint_cost()
 def squarepyramid():
     a = input("Base edge >>> ")
     h = input("Height >>> ")
@@ -133,6 +161,7 @@ def squarepyramid():
     answer = int
     answer = sah2 + aa2
     print("Surface area is",answer)
+    paint_cost()
 def rectpyramid():
     l = input("length >>> ")
     w = input("width >>> ")
@@ -167,6 +196,7 @@ def rectpyramid():
     answer = int
     answer = lshw + wshl + lw
     print("Surface area is",answer)
+    paint_cost()
 def tripyramid():
     b = input("Side of base >>> ")
     a = input("Apothem (height of triangle) >>> ")
@@ -181,6 +211,7 @@ def tripyramid():
     blab = int
     blab = bl + ba2
     print("surface area is",blab)
+    paint_cost()
 def conesurface():
     r = input("Radius >>> ")
     h = input("Height >>> ")
@@ -196,6 +227,7 @@ def conesurface():
     pir = int
     pir = rr * 3.14 * rs
     print("Surface area is",pir)
+    paint_cost()
 def octahedron():
     a = input("Edge >>> ")
     aa = int(a)
@@ -206,6 +238,7 @@ def octahedron():
     sr2 = int
     sr2 = aa2 * sr * 2
     print("Surface area is",sr2)
+    paint_cost()
 def hemisphere():
     r = input("radius >>> ")
     print("3.14 = pi")
@@ -213,6 +246,7 @@ def hemisphere():
     rrr = int
     rrr = rr * rr * 2 * 3.14
     print("Surface area is",rrr)
+    paint_cost()
 def hexagon():
     a = input("Base edge >>> ")
     h = input("Height >>> ")
@@ -221,3 +255,4 @@ def hexagon():
     ah = int
     ah = aa * hh * 6 + 3 * math.sqrt(3) * aa * aa
     print("Surface area is",ah)
+paint_cost()
