@@ -13,7 +13,16 @@ def paint_cost():
         print(c.cl + "How many sq. units can one gallon cover?")
         g = int(input(">>> "))
         print(c.cl + "How much does one gallon cost?")
-
+        c = int(input(">>> "))
+        sa = float()
+        g = float()
+        c = float()
+        cv = sa/ g
+        c1 = cv * c
+        print(c.cl + "It would cost $" + str(c1) + " to paint")
+    else:
+        print(c.cl + "Oh. I guess I'll leave now.")
+        exit()
 def sacube():
     a = int(input("What is one side's length of the cube? >>> "))
     b = int
