@@ -1,6 +1,19 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
 import math    
+def paint_cost():
+    """Determines how much it would cost to paint the outside surface of an
+    object based on surface area, cost per gallon, and how much 1 gallon
+    of paint covers, in sq. ft.
+    """
+    q = input(c.cl + "Do you want to sove how much it will cost to paint the surface of the object? >>> ")
+    if ["yes","y","sure"] in q:
+        print(c.cl + "What is the surface area of the object?")
+        sa = int(input(">>> "))
+        print(c.cl + "How many sq. units can one gallon cover?")
+        g = int(input(">>> "))
+        print(c.cl + "How much does one gallon cost?")
+
 def sacube():
     a = int(input("What is one side's length of the cube? >>> "))
     b = int
