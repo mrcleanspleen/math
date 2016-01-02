@@ -1,7 +1,36 @@
 import skilstak.colors as c
 import time as t
 import math
-
+def prime():
+    option = input(c.clear + "o = fast calc; n = normal >>> ")
+    if option == "o":
+        i = int(input("what odd # to start at? > ")) 
+        while True:
+            squared_i = math.sqrt(i)
+            ri = math.ceil(squared_i)
+            is_prime = True
+            for j in range(2,ri):
+                if i%j == 0: #Says if there is a remainder
+                    is_prime = False
+                    break
+            if is_prime == True:
+                print(i)
+            i += 2 #Adds one to i
+        if option == "n":
+            i = int(input("what # to start at? > ")) 
+            while True:
+                squared_i = math.sqrt(i)
+                ri = math.ceil(squared_i)
+                is_prime = True
+                for j in range(2,ri):
+                    if i%j == 0: #Says if there is a remainder
+                        is_prime = False
+                        break
+                if is_prime == True:
+                    print(i)
+                    i += 1 #Adds one to i
+            else:
+                print("choose one option")
 def solve_squareroot():
     """Finds the square root of a number"""
     inpu = input("square root what number? >>> ")
