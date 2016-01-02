@@ -42,6 +42,12 @@ if __name__ == '__main__':
             if inpt == "---explode---":
                 """gets messed up by troll, so is never supposed to be typed"""
                 o.exiting()
+            elif inpt == "pr":
+                print(c.cl)
+                r.prime()
+            elif inpt == "prt":
+                print(c.cl)
+                r.test_prime()
             elif inpt == "rd":
                 print(c.cl)
                 i.raddeg()

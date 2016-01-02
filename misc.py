@@ -29,8 +29,25 @@ def prime():
                 if is_prime == True:
                     print(i)
                     i += 1 #Adds one to i
-            else:
-                print("choose one option")
+        else:
+            print("choose one option")
+def test_prime():
+    i = int(input("what # to test? > "))
+    squared_i = math.sqrt(i)
+    ri = math.ceil(squared_i)
+    if i < 3:
+        print("too small")
+        exit()
+    elif i <= 16:
+        ri = i
+    is_prime = True
+    for j in range(2,ri):
+        if i%j == 0: #Says if there is a remainder
+            is_prime = False
+    if is_prime == True:
+        print("Is prime")
+    else:
+        print("Not prime")
 def solve_squareroot():
     """Finds the square root of a number"""
     inpu = input("square root what number? >>> ")

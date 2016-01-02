@@ -91,5 +91,7 @@ def amisc():
     df = divide fractions
     mf = multiply fractions
     mul = multiply numbers
+    pr = prime number generator
+    prt = prime number tester
     pow = exponents and powers
     sr = square root a number""")
