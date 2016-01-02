@@ -6,7 +6,7 @@ if __name__ == '__main__':
         import options as o
         o.welcome()
         while True:
-            import misc  as r
+            import misc as r
             import area as a
             import surface as s
             import volume as v

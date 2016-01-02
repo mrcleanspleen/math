@@ -30,7 +30,7 @@ def intro():
     x to exit
 
     """)
-def avolume():
+def volume():
     print(c.cl + """
     cu = volume of a cube,
     vrp = volume of rectangular pyramid
@@ -44,14 +44,14 @@ def avolume():
     voc = volume of an octahedron
     vt = triangular prism volume
     vc = cylinder volume""")
-def agraph():
+def graph():
     print(c.cl + """    
     GRAPHING
     is = inequality solver
     y = equation solver, 
     ss = system solver,
     si = system of inequalities""")
-def asurface():
+def surface():
     print(c.cl + """
     hp = hexagonal prism surface area
     rp = rectangular pyramid surface area
@@ -65,7 +65,7 @@ def asurface():
     cs = cylinder surface area,
     co = cone surface area
     tp = triangular pyramid surface area""")
-def aarea():
+def area():
     print(c.cl + """
     c = area of a circle
     s = area of a square, 
@@ -81,7 +81,7 @@ def exiting():
     print(c.clear + c.multi("Thanks for using the ultimate calculator!"))
     print(c.x + "Come again soon!")
     exit()
-def amisc():
+def misc():
     print(c.cl + """
     pt = pythagorean theorem, 
     df = find distance between 2 points
