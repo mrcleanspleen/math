@@ -62,7 +62,7 @@ if a == 1:
         '''if it's negative, changes every other numbr to negative.'''
         negative = True
     if negative == False:
-        while solved == False:
+        while solved == False:7
             try:
                 n1=int(cpairs[test1])
                 n2=int(cpairs[test1+1])
@@ -160,7 +160,7 @@ else:
                                 na1 = n1 * a2
                                 na2 = n2 * a1
                                 na3 = na1 + na2
-                                print(a1,"*",n1,"+",a2,"*",n2," = ",na3)
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
                                     print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
@@ -185,7 +185,7 @@ else:
                                 na1 = n1 * a2
                                 na2 = n2 * a1
                                 na3 = na1 + na2
-                                print(a1,"*",n1,"+",a2,"*",n2," = ",na3)
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
                                     print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
@@ -211,8 +211,8 @@ else:
                                 na1 = n1 * a2
                                 na2 = n2 * a1
                                 na3 = na1 + na2
-                                print(a1,"*",n1,"+",a2,"*",n2," = ",na3)
-                                if na3 == b:
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
+                                if na3 == b
                                     print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
                                 else:
@@ -236,9 +236,9 @@ else:
                                 na1 = n1 * a2
                                 na2 = n2 * a1
                                 na3 = na1 + na2
-                                print(a1,"*",n1,"+",a2,"*",n2," = ",na3)
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    print(color.cl+"answer: ",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
                                 else:
                                     test1 += 2
