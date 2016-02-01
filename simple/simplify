@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 import math
 import skilstak.colors as color
+print("Welcome to Peter's trinomial factoring calculator!")
 print(color.green + "?" + color.x + "x² + bx + c")
 a = int(input("? > "))
 print(color.clear,a,"x² + " + color.green + "?" + color.x + "x + c")
 b = int(input("b > "))
 
-print(color.clear,a,"x² +",b,"x + "+color.green+"?"+c.x)
+print(color.clear,a,"x² +",b,"x + "+color.green+"?"+color.x)
 c = int(input("c > "))
+string = a,"x² +",b,"x + ",c
 '''starting variables'''
 cfactors = []
 cpairs = []
@@ -72,8 +74,8 @@ if a == 1:
                 else:
                     test1 += 2
             except IndexError:
-                print("Not factorable.")
-                break
+                print("Is not factorable.")
+                exit()
     elif negative == True:
         while solved == False:
             n1=int(edited[test1])
@@ -168,8 +170,8 @@ else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        print("not factorable")
-                        break
+                        print("Is not factorable.")
+                        exit()
         elif negative == True:
             while solved == False:
                 for count in range(len(apairs)):
@@ -193,8 +195,8 @@ else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        print("not factorable")
-                        break
+                        print("Is not factorable.")
+                        exit()
     elif anegative == True:
         if negative == True:
             while solved == False:
@@ -219,8 +221,8 @@ else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        print("Not factorable.")
-                        break
+                        print("Is not factorable.")
+                        exit()
         elif negative == False:
             while solved == False:
                 for count in range(len(aedited)):
@@ -244,5 +246,5 @@ else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        print("Not factorable.")
-                        break
+                        print("Is not factorable.")
+                        exit()
