@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import math
 import skilstak.colors as color
-print("Welcome to Peter's trinomial factoring calculator!")
+print("Welcome to Peter's trinomial factoring calculator!GO to www.mathcelebrity.com/binomult.php to check")
+
 print(color.green + "?" + color.x + "x² + bx + c")
 a = int(input("? > "))
 print(color.clear,a,"x² + " + color.green + "?" + color.x + "x + c")
@@ -62,7 +63,7 @@ if a == 1:
         '''if it's negative, changes every other numbr to negative.'''
         negative = True
     if negative == False:
-        while solved == False:7
+        while solved == False:
             try:
                 n1=int(cpairs[test1])
                 n2=int(cpairs[test1+1])
@@ -162,7 +163,7 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
                                 else:
                                     test1 += 2
@@ -187,7 +188,7 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
                                 else:
                                     test1 += 2
@@ -212,8 +213,8 @@ else:
                                 na2 = n2 * a1
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
-                                if na3 == b
-                                    print(color.cl+"answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                if na3 == b:
+                                    print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
                                 else:
                                     test1 += 2
@@ -238,7 +239,7 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    print(color.cl+"answer: ",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    print("answer: ",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
                                 else:
                                     test1 += 2
