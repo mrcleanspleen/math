@@ -86,6 +86,7 @@ if a == 1:
             if n3 == b:
                 solved = True
                 print(color.cl+"answer:"+"(x +",n1,") * (x +",n2,")")
+                exit()
             else:
                 test1 += 2
 
@@ -165,6 +166,7 @@ else:
                                 if na3 == b:
                                     print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
@@ -190,6 +192,7 @@ else:
                                 if na3 == b:
                                     print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
@@ -216,6 +219,7 @@ else:
                                 if na3 == b:
                                     print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
@@ -241,6 +245,7 @@ else:
                                 if na3 == b:
                                     print("answer: ",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
                                     solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
