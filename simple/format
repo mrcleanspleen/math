@@ -32,7 +32,7 @@ apos = 0
 aneg = -1
 atest = 0
 aedited = []
-answers = ""
+answers = []
 counter = 0
 if a == 1:
     '''checks if it is a simple number.'''
@@ -72,40 +72,24 @@ if a == 1:
                 n3=n1+n2
                 print(n1,n2," = ",n3)
                 if n3 == b:
-                    statement = "(x + {}) * (x + {})\n".format(n1,n2)
-                    answers += statement
-                    print("answer: (x + {}) * (x + {})".format(n1,n2))
-                    counter += 1
-                    test1 += 2
+                    print("(x +",n1,") * (x +",n2,")")
                 else:
                     test1 += 2
             except IndexError:
-                if counter > 0:
-                    print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
-                else:
-                    print(color.red+"Is not factorable."+color.x)
+                print("Is not factorable.")
                 exit()
     elif negative == True:
-        while True:
-            try:
-                n1=int(edited[test1])
-                n2=int(edited[test1+1])
-                n3=n1+n2
-                print(n1,n2," = ",n3)
-                if n3 == b:
-                    statement = "(x + {}) * (x + {})\n".format(n1,n2)
-                    answers += statement
-                    print("answer: (x + {}) * (x + {})".format(n1,n2))
-                    counter += 1
-                    test1 += 2
-                else:
-                    test1 += 2
-            except IndexError:
-                if counter > 0:
-                    print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
-                else:
-                    print(color.red+"Is not factorable."+color.x)
+        while solved == False:
+            n1=int(edited[test1])
+            n2=int(edited[test1+1])
+            n3=n1+n2
+            print(n1,n2," = ",n3)
+            if n3 == b:
+                solved = True
+                print(color.cl+"answer:"+"(x +",n1,") * (x +",n2,")")
                 exit()
+            else:
+                test1 += 2
 
 
 else:
@@ -167,7 +151,7 @@ else:
         negative = True
     if anegative == False:
         if negative == False:
-            while True:
+            while solved == False:
                 for count in range(len(apairs)):
                     try:
                         for count in range(len(cpairs)):
@@ -181,21 +165,16 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
-                                    answers += statement
-                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
-                                    counter += 1
-                                    test1 += 2
+                                    print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        if counter > 0:
-                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
-                        else:
-                            print(color.red+"Is not factorable."+color.x)
+                        print("Is not factorable.")
                         exit()
         elif negative == True:
             while solved == False:
@@ -212,25 +191,20 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
-                                    answers += statement
-                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
-                                    counter += 1
-                                    test1 += 2
+                                    print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        if counter > 0:
-                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
-                        else:
-                            print(color.red+"Is not factorable."+color.x)
+                        print("Is not factorable.")
                         exit()
     elif anegative == True:
         if negative == True:
-            while True:
+            while solved == False:
                 for count in range(len(aedited)):
                     try:
                         for count in range(len(edited)):
@@ -244,24 +218,19 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
-                                    answers += statement
-                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
-                                    counter += 1
-                                    test1 += 2
+                                    print("answer: (",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        if counter > 0:
-                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
-                        else:
-                            print(color.red+"Is not factorable."+color.x)
+                        print("Is not factorable.")
                         exit()
         elif negative == False:
-            while True:
+            while solved == False:
                 for count in range(len(aedited)):
                     try:
                         for count in range(len(cpairs)):
@@ -275,19 +244,14 @@ else:
                                 na3 = na1 + na2
                                 print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
                                 if na3 == b:
-                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
-                                    answers += statement
-                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
-                                    counter += 1
-                                    test1 += 2
+                                    print("answer: ",a1,"x +",n1,") * (",a2 ,"x + ",n2,")")
+                                    solved = True
+                                    exit()
                                 else:
                                     test1 += 2
                             else:
                                 test1 = 0
                                 atest += 2
                     except IndexError:
-                        if counter > 0:
-                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
-                        else:
-                            print(color.red+"Is not factorable."+color.x)
+                        print("Is not factorable.")
                         exit()
