@@ -38,7 +38,7 @@ if __name__ == '__main__':
                 o.trig()
             else:
                 t.trollface()
-            inpt = input(">>> ")
+            inpt == input(">>> ")
             if inpt == "---explode---":
                 """gets messed up by troll, so is never supposed to be typed"""
                 o.exiting()
