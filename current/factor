@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import math
 import skilstak.colors as color
-print("Welcome to Peter's trinomial factoring calculator!GO to www.mathcelebrity.com/binomult.php to check")
+print("Welcome to Peter's trinomial factoring calculator!")
 
 print(color.green + "?" + color.x + "x² + bx + c")
 a = int(input("? > "))
