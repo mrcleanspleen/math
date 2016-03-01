@@ -20,8 +20,8 @@ def solve_quadratic():
         desc = (m.sqrt(d))
         top1 = (-1*b + desc)
         top2 = (-1*b - desc)
-        quad1 = (top1/2*a)
-        quad2 = (top2/2*a)
+        quad1 = (top1/(2*a))
+        quad2 = (top2/(2*a))
         if quad1 == quad2:
             print("You have one solution:")
             print("{" + s.red + str(quad1) + s.x + "}")
