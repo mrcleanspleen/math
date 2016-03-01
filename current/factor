@@ -1,0 +1,293 @@
+#!/usr/bin/env python3
+import math
+import skilstak.colors as color
+print("Welcome to Peter's trinomial factoring calculator!")
+
+print(color.green + "?" + color.x + "x² + bx + c")
+a = int(input("? > "))
+print(color.clear,a,"x² + " + color.green + "?" + color.x + "x + c")
+b = int(input("b > "))
+
+print(color.clear,a,"x² +",b,"x + "+color.green+"?"+color.x)
+c = int(input("c > "))
+string = a,"x² +",b,"x + ",c
+'''starting variables'''
+cfactors = []
+cpairs = []
+cpos = 0
+cneg = -1
+pos1 = 0
+test1 = 0
+total = 0
+edited = []
+solved = False
+sqc = c * c
+sqrtc = int(sqc ** 0.5)
+sqa = a * a
+sqrta = int(sqa ** 0.5)
+'''turns numbers positive'''
+afactors = []
+apairs = []
+apos = 0
+aneg = -1
+atest = 0
+aedited = []
+answers = ""
+counter = 0
+if a == 1:
+    '''checks if it is a simple number.'''
+    for i in range(1, sqrtc + 1):
+        '''creates the factors of the number'''
+        if c % i == 0:
+            cfactors.append(i)
+
+
+    for z in range(len(cfactors)):
+        '''creates "pairs" of numbers:2 numbers next to each other'''
+        cpairs.append(cfactors[cpos])
+        cpairs.append(cfactors[cneg])
+        cpos += 1
+        cneg -= 1
+
+
+    halfcpairs = int(1/2*len(cpairs))
+    if c > 0:
+        cpairs += [-item for item in cpairs]
+        print("Factors are "+str(cpairs))
+        negative = False
+        '''adds a list of all negative numbers to the original list'''
+    else:
+        for x in range(halfcpairs):
+            edited.append(cpairs[pos1])
+            edited.append(-cpairs[pos1+1])
+            pos1 += 2
+        print("Factors are "+str(edited))
+        '''if it's negative, changes every other numbr to negative.'''
+        negative = True
+    if negative == False:
+        while True:
+            try:
+                n1=int(cpairs[test1])
+                n2=int(cpairs[test1+1])
+                n3=n1+n2
+                print(n1,n2," = ",n3)
+                if n3 == b:
+                    statement = "(x + {}) * (x + {})\n".format(n1,n2)
+                    answers += statement
+                    print("answer: (x + {}) * (x + {})".format(n1,n2))
+                    counter += 1
+                    test1 += 2
+                else:
+                    test1 += 2
+            except IndexError:
+                if counter > 0:
+                    print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
+                else:
+                    print(color.red+"Is not factorable."+color.x)
+                exit()
+    elif negative == True:
+        while True:
+            try:
+                n1=int(edited[test1])
+                n2=int(edited[test1+1])
+                n3=n1+n2
+                print(n1,n2," = ",n3)
+                if n3 == b:
+                    statement = "(x + {}) * (x + {})\n".format(n1,n2)
+                    answers += statement
+                    print("answer: (x + {}) * (x + {})".format(n1,n2))
+                    counter += 1
+                    test1 += 2
+                else:
+                    test1 += 2
+            except IndexError:
+                if counter > 0:
+                    print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
+                else:
+                    print(color.red+"Is not factorable."+color.x)
+                exit()
+
+
+else:
+    '''creates factors of a'''
+    for i in range(1, sqrta + 1):
+        if a % i == 0:
+            afactors.append(i)
+
+    '''sorts factors of a'''
+    for z in range(len(afactors)):
+        apairs.append(afactors[apos])
+        apairs.append(afactors[aneg])
+        apos += 1
+        aneg -= 1
+
+
+    '''adds negatives to sorted factors of a'''
+    halfapairs = int(1/2*len(apairs))
+    if a > 0:
+        apairs += [-item for item in apairs]
+        print("Factors of a are "+str(apairs))
+        anegative = False
+
+
+    else:
+        for x in range(halfapairs):
+            aedited.append(apairs[pos1])
+            aedited.append(-apairs[pos1+1])
+            pos1 += 2
+        print("Factors of a are "+str(aedited))
+        anegative = True
+
+    '''creates factors of c'''
+    for u in range(1, sqrtc + 1):
+        if c % u == 0:
+            cfactors.append(u)
+
+
+
+    '''sorts factors of c'''
+    for m in range(len(cfactors)):
+        cpairs.append(cfactors[cpos])
+        cpairs.append(cfactors[cneg])
+        cpos += 1
+        cneg -= 1
+    halfcpairs = int(1/2*len(cpairs))
+    '''adds negative numbers to factors''' 
+    if c > 0:
+        cpairs += [-item for item in cpairs]
+        print("Factors of c are "+str(cpairs))
+        negative = False
+    else:
+        for x in range(halfcpairs):
+            edited.append(cpairs[pos1])
+            edited.append(-cpairs[pos1+1])
+            pos1 += 2
+        print("Factors of c are "+str(edited))
+        '''if it's negative, changes every other numbr to negative.'''
+        negative = True
+    if anegative == False:
+        if negative == False:
+            while True:
+                for count in range(len(apairs)):
+                    try:
+                        for count in range(len(cpairs)):
+                            if test1 < len(cpairs):
+                                n1=int(cpairs[test1])
+                                n2=int(cpairs[test1+1])
+                                a1=int(apairs[atest])
+                                a2=int(apairs[atest+1])
+                                na1 = n1 * a2
+                                na2 = n2 * a1
+                                na3 = na1 + na2
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
+                                if na3 == b:
+                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
+                                    answers += statement
+                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
+                                    counter += 1
+                                    test1 += 2
+                                else:
+                                    test1 += 2
+                            else:
+                                test1 = 0
+                                atest += 2
+                    except IndexError:
+                        if counter > 0:
+                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
+                        else:
+                            print(color.red+"Is not factorable."+color.x)
+                        exit()
+        elif negative == True:
+            while solved == False:
+                for count in range(len(apairs)):
+                    try:
+                        for count in range(len(edited)):
+                            if test1 < len(edited):
+                                n1=int(edited[test1])
+                                n2=int(edited[test1+1])
+                                a1=int(apairs[atest])
+                                a2=int(apairs[atest+1])
+                                na1 = n1 * a2
+                                na2 = n2 * a1
+                                na3 = na1 + na2
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
+                                if na3 == b:
+                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
+                                    answers += statement
+                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
+                                    counter += 1
+                                    test1 += 2
+                                else:
+                                    test1 += 2
+                            else:
+                                test1 = 0
+                                atest += 2
+                    except IndexError:
+                        if counter > 0:
+                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
+                        else:
+                            print(color.red+"Is not factorable."+color.x)
+                        exit()
+    elif anegative == True:
+        if negative == True:
+            while True:
+                for count in range(len(aedited)):
+                    try:
+                        for count in range(len(edited)):
+                            if test1 < len(edited):
+                                n1=int(edited[test1])
+                                n2=int(edited[test1+1])
+                                a1=int(aedited[atest])
+                                a2=int(aedited[atest+1])
+                                na1 = n1 * a2
+                                na2 = n2 * a1
+                                na3 = na1 + na2
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
+                                if na3 == b:
+                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
+                                    answers += statement
+                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
+                                    counter += 1
+                                    test1 += 2
+                                else:
+                                    test1 += 2
+                            else:
+                                test1 = 0
+                                atest += 2
+                    except IndexError:
+                        if counter > 0:
+                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
+                        else:
+                            print(color.red+"Is not factorable."+color.x)
+                        exit()
+        elif negative == False:
+            while True:
+                for count in range(len(aedited)):
+                    try:
+                        for count in range(len(cpairs)):
+                            if test1 < len(cpairs):
+                                n1=int(cpairs[test1])
+                                n2=int(cpairs[test1+1])
+                                a1=int(aedited[atest])
+                                a2=int(aedited[atest+1])
+                                na1 = n1 * a2
+                                na2 = n2 * a1
+                                na3 = na1 + na2
+                                print(a1,"*",n2,"+",a2,"*",n1," = ",na3)
+                                if na3 == b:
+                                    statement = "({}x + {}) * ({}x + {})\n".format(a1,n1,a2,n2)
+                                    answers += statement
+                                    print("answer: ({}x + {}) * ({}x + {})".format(a1,n1,a2,n2))
+                                    counter += 1
+                                    test1 += 2
+                                else:
+                                    test1 += 2
+                            else:
+                                test1 = 0
+                                atest += 2
+                    except IndexError:
+                        if counter > 0:
+                            print(color.orange+"Possible answers are:\n"+color.green+answers+color.x)
+                        else:
+                            print(color.red+"Is not factorable."+color.x)
+                        exit()
