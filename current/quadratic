@@ -29,5 +29,6 @@ def solve_quadratic():
             print("You have 2 solutions:")
             print("{" + c.red + quad1 + c.x + "," + c.red + quad2 + c.x + "}")
 
-if __name__ == 
+if __name__ == "__main__":
+    solve_quadratic()
 
