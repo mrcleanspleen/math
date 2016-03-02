@@ -3,7 +3,7 @@ import math as m
 import skilstak.colors as s
 import time
 def solve_quadratic():
-    print("Welcome to Alexander's quadratic solver! This program will give you the solutions to a quadratic equation.")
+    print(s.clear + "Welcome to Alexander's quadratic solver! This program will give you the solutions to a quadratic equation.")
     print("ax^2 + bx + c")
     a1 = input("What does a equal? ")
     b1 = input(s.clear + "What does b equal? ")
