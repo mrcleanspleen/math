@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import math
+import time
+
+def solve_vertex():
+  a = input("a: ")
+  b = input("b: ")
+  c = input("c: ")
+  a = float()
+  b = float()
+  c = float()
+  x = (-b)/(2*a)
+  y = a*(x*x)+(x*b)+c
+  print(c.clear + "vetex form is " + a + "(x - " + x + ") + " + y)
+
+if __name__ == "__main__":
+  solve_vertex()
