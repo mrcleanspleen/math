@@ -8,8 +8,8 @@ def solve_vertex():
   c = float(input("c: "))
   x1 = (-1 * b)/(2.*a)
   y1 = -1 * (b**2.)/(4. * a)
-  y1 = y + c
-  print("vertex form is " + a + "(x - " + x1 + ") + " + y1)
+  y1 = y1 + c
+  print("vertex form is " + str(a) + "(x - " + str(x1) + ") + " + str(y1))
 
 if __name__ == "__main__":
   solve_vertex()
