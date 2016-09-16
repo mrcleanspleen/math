@@ -9,8 +9,9 @@ def solve_vertex():
   a = float()
   b = float()
   c = float()
-  x = (-b)/(2*a)
-  y = a*(x*x)+(x*b)+c
+  x = (-b)/(2.*a)
+  y = -1 * (b**2.)/(4. * a)
+  y = y + c
   print(c.clear + "vetex form is " + a + "(x - " + x + ") + " + y)
 
 if __name__ == "__main__":
