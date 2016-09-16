@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 import math
 import time
-
+import skilstak.colors as c
 def solve_vertex():
-  a = input("a: ")
-  b = input("b: ")
-  c = input("c: ")
-  a = float()
-  b = float()
-  c = float()
-  x = (-b)/(2.*a)
-  y = -1 * (b**2.)/(4. * a)
-  y = y + c
-  print(c.clear + "vetex form is " + a + "(x - " + x + ") + " + y)
+  a = float(input("a: "))
+  b = float(input("b: "))
+  c = float(input("c: "))
+  x1 = (-1 * b)/(2.*a)
+  y1 = -1 * (b**2.)/(4. * a)
+  y1 = y + c
+  print("vertex form is " + a + "(x - " + x1 + ") + " + y1)
 
 if __name__ == "__main__":
   solve_vertex()
