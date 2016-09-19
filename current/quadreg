@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import math
+import skilstak.colors as c
+import numpy
+x1 = float(input("x1: "))
+y1 = float(input("y1: "))
+x2 = float(input("x2: "))
+y2 = float(input("y2: "))
+x3 = float(input("x3: "))
+y3 = float(input("y3: "))
+x = [x1, x2, x3]
+y = [y1, y2, y3]
+p = numpy.poly1d(numpy.polyfit(x, y, deg=2), variable='x')
+print(p)
