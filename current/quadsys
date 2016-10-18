@@ -11,8 +11,8 @@ def quadratic_system():
     a = a1 - a2
     b = b1 - b2
     c = c1- c2
-    x1 = (-1 * b + (b*b - (4*a*c))**0.5)/(2 * a)
-    x2 = (-1 * b - (b*b - (4*a*c))**0.5)/(2 * a)
+    x1 = (-1 * b + math.sqrt((b*b - (4*a*c))/(2 * a)
+    x2 = (-1 * b - math.sqrt(b*b - (4*a*c)))/(2 * a)
     y1 = (a*x1*x1) + (b*x1) + c
     y2 = (a*x2*x2) + (b*x2) + c
     print("Solutions are (" + str(x1) + "," + str(y1) + "), (" + str(x2) + "," + str(y2) + ")")
