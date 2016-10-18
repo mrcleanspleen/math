@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import math
+import skilstak.colors as c
+def quadratic_system():
+    a1 = float(input("a in first equation >>> "))
+    b1 = float(input("b in first equation >>> "))
+    c1 = float(input("c in first equation >>> "))
+    a2 = float(input("a in second equation >>> "))
+    b2 = float(input("b in second equation >>> "))
+    c2 = float(input("c in second equation >>> "))
+    a = a1 - a2
+    b = b1 - b2
+    c = c1- c2
+    x1 = (-1 * b + (b*b - (4*a*c))**0.5)/(2 * a)
+    x2 = (-1 * b - (b*b - (4*a*c))**0.5)/(2 * a)
+    y1 = (a*x1*x1) + (b*x1) + c
+    y2 = (a*x2*x2) + (b*x2) + c
+    print("Solutions are (" + str(x1) + "," + str(y1) + "), (" + str(x2) + "," + str(y2) + ")")
+
+if __name__ == "__main__":
+    quadratic_system()
