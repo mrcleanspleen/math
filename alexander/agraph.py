@@ -10,10 +10,8 @@ def choose_graph():
     ss = system solver,
     si = system of inequalities""")
     inpt = input(">>> ")
-    if inpt = "is":
+    if inpt == "is":
         solve_inequality()
-    elif inpt = "y":
-        solve_    
 
 def solve_system():
     print("y = 1y,x = 1x,")
@@ -153,33 +151,33 @@ def no():
     print("Your point does not work")
 def solve_inequality2():
     """Checks whether a set of points will solve a systems of inequalities"""
-    print(c.cl + c.base03 +  "Welcome to the system of inequalities solver machine")
+    print(c.cl + c.base2 +  "Welcome to the system of inequalities solver machine")
     print("Make sure you have 2 inequalities")
     print("Make sure the equation is in standard form, or Ax + By = C")
     print("Make sure your have no fractions or decimals")
     print("Enter the first equations ineqaulity. Use only >, <, <=, or >=.")
-    print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03 + "?")
+    print(c.base2 + "?x + ?y " + c.red + "_ " + c.base2 + "?")
     in1 = input(">>> ")
     print(c.cl + "Enter A value then hit enter")
-    print(c.red + "?" + c.base03 + "x + ?y " + in1 + " ?")
+    print(c.red + "?" + c.base2 + "x + ?y " + in1 + " ?")
     a1 = input(">>> ")
     print(c.clear + "Enter B value then hit enter")
-    print(c.base03 + a1 + "x + " + c.red + "?" + c.base03 + "y " + in1 + " ?")
+    print(c.base2 + a1 + "x + " + c.red + "?" + c.base2 + "y " + in1 + " ?")
     b1 = input(">>> ")
     print(c.clear + "Enter C value then hit enter")
-    print(c.base03 + a1 + "x + " + b1 + "y " + in1 + c.red + " ?" + c.x)
+    print(c.base2 + a1 + "x + " + b1 + "y " + in1 + c.red + " ?" + c.x)
     d1 = input(">>> ")
     print(c.cl + "Enter the second equations ineqaulity. Use only >, <, <=, or >=.")
-    print(c.base03 + "?x + ?y " + c.red + "_ " + c.base03 + "?")
+    print(c.base2 + "?x + ?y " + c.red + "_ " + c.base2 + "?")
     in2 = input(">>> ")
     print(c.cl + "Enter A value then hit enter")
-    print(c.red + "?" + c.base03 + "x + ?y " + in2 + " ?")
+    print(c.red + "?" + c.base2 + "x + ?y " + in2 + " ?")
     a2 = input(">>> ")
     print(c.clear + "Enter B value then hit enter")
-    print(c.base03 + a2 + "x + " + c.red + "?" + c.base03 + "y " + in2 + " ?")
+    print(c.base2 + a2 + "x + " + c.red + "?" + c.base2 + "y " + in2 + " ?")
     b2 = input(">>> ")
     print(c.clear + "Enter C value then hit enter")
-    print(c.base03 + a2 + "x + " + b2 + "y " + in2 + c.red + " ?" + c.x)
+    print(c.base2 + a2 + "x + " + b2 + "y " + in2 + c.red + " ?" + c.x)
     d2 = input(">>> ")
     print(c.cl + "What x value are you trying to test?")
     x = input(">>> ")
@@ -324,3 +322,5 @@ def solve_inequality():
             no()
     else:
         print("ERROR! ERROR! DOES NOT COMPUTE! KABLOOEY!")
+if __name__ == '__main__':
+    solve_inequality2()
