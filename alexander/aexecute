@@ -4,13 +4,13 @@ import skilstak.colors as c
 if __name__ == '__main__':
     try:
         while True:
-            import options as o 
-            import misc  as r
-            import area as a
-            import surface as s
-            import volume as v
-            import graph as g
-            import troll as t
+            import aoptions as o 
+            import amisc  as r
+            import aarea as a
+            import asurface as s
+            import avolume as v
+            import agraph as g
+            import atroll as t
             o.intro()
             """Lists all categories avaliable to the user"""
             category = input(">>> ")

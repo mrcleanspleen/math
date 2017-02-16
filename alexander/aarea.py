@@ -8,13 +8,13 @@ def choose_area():
     tr = area of a triangle
     t = area of a trapezoid""")
     inpt = input(">>> ")
-    if inpt = "s":
+    if inpt == "s":
         solve_square()
-    elif inpt = "c":
+    elif inpt == "c":
         solve_circle()
-    elif inpt = "tr":
+    elif inpt == "tr":
         solve_triange()
-    elif inpt = "t":
+    elif inpt == "t":
         solve_trapazoid()
     else:
         print(c.cl + "Human. Y you do dis.")

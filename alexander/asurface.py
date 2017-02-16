@@ -255,4 +255,3 @@ def hexagon():
     ah = int
     ah = aa * hh * 6 + 3 * math.sqrt(3) * aa * aa
     print("Surface area is",ah)
-paint_cost()
