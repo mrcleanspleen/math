@@ -17,9 +17,14 @@ tan = opposite / adjacent
 quest = input("Are you trying to find an angle or a side? ")
 if "side" in quest:
     trig = input("cos, sin, or tan? ")
-    if trig == "cos":
-        adj = input("adjacent? ")
-        hyp = input("hypotenuse? ")
+    if "cos" in trig:
+        side = input("Do you know hyp or adj? ")
+        length = float(input("What is the length of that side? "))
+        if "hyp" in side:
+            sidlen = m.degrees(m.cos(ang)*length)
+        else:
+            pass
+
 if "angle" in quest:
     inv = input("inverse of cos, sin, or tan? ")
     if inv == "cos":
