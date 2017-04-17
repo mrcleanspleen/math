@@ -20,7 +20,7 @@ if "side" in quest:
     ang1 = float(input("What is the measure of the angle? "))
     ang = m.radians(ang1)
     if "cos" in trig:
-        side = input("Do you know hyp or adj?" )
+        side = input("Do you know hyp or adj? ")
         length = float(input("What is the length of that side? "))
         if "hyp" in side:
             sidlen = m.cos(ang)*length
