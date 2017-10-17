@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import math
 
 bases = input("Please input your list of DNA bases here, with each codon separated by a space: ")
 codons = bases.split(" ")
@@ -16,4 +15,43 @@ for index, item in enumerate(codons):
         condons[i] = "Leu"
     elif ['auu','auc','aua'] in codons[i]:
         codons[i] = "Ile"
-    elif 
+    elif codons[i] == 'aug':
+        codons[i] = "start"
+    elif ['guc','guu','gua','gug'] in codons[i]:
+        codons[i] = "Val"
+    elif ['ucu','ucc','uca','ucg'] in codons[i]:
+        codons[i] = "Ser"
+    elif ['ccu','ccc','cca','ccg'] in codons[i]:
+        codons[i] = "Pro"
+    elif ['acu','acc','aca','acg'] in codons[i]:
+        codons[i] = "Thr"
+    elif ['gcu','gcc','gca','gcg'] in codons[i]:
+        codons[i] = "Ala"
+    elif ['ugu','ugc'] in codons[i]:
+        codons[i] = "Tyr"
+    elif ['uua','uag','uga'] in codons[i]:
+        codons[i] = "STOP"
+    elif ['cau','cac'] in codons[i]:
+        codons[i] = "His"
+    elif ['caa','cag'] in codons[i]:
+        codons[i] = "Gln"
+    elif ['aau','aac'] in codons[i]:
+        codons[i] = "Asn"
+    elif ['aaa','aag'] in codons[i]:
+        codons[i] = "Lys"
+    elif ['gau','gac'] in codons[i]:
+        codons[i] = "Asp"
+    elif ['gaa','gag'] in codons[i]:
+        codons[i] = "Glu"
+    elif ['ugu','ugc'] in codons[i]:
+        codons[i] = "Cys"
+    elif ['cgu','cgc','cga','cgg','aga','agg'] in codons[i]:
+        codons[i] = "Arg"
+    elif codons[i] == "ugg"
+        codons[i] = "Trp"
+    elif ['agu','agc'] in condons[i]:
+        codons[i] = "Ser"
+    elif ['ggu','ggc','gga','ggg'] in codons[i]:
+        codons[i] = "Gly"
+    else:
+        exit()
