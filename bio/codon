@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import math
+
+bases = input("Please input your list of DNA bases here, with each codon separated by a space: ")
+codons = bases.split(" ")
+codons = [word.replace('g','f') for word in codons]  
+codons = [word.replace('c','g') for word in codons]  
+codons = [word.replace('a','u') for word in codons]  
+codons = [word.replace('f','c') for word in codons]  
+codons = [word.replace('t','a') for word in codons]  
+print(codons)
+for index, item in enumerate(codons):
+    if ['uuu','uuc'] in codons[index]:
+        codons[index] = "Phe"
+    elif ['uua','uug','cuu','cuc','cua','cug'] in codons[i]:
+        condons[i] = "Leu"
+    elif ['auu','auc','aua'] in codons[i]:
+        codons[i] = "Ile"
+    elif 
