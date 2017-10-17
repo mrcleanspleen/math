@@ -8,50 +8,51 @@ codons = [word.replace('a','u') for word in codons]
 codons = [word.replace('f','c') for word in codons]  
 codons = [word.replace('t','a') for word in codons]  
 print(codons)
-for index, item in enumerate(codons):
-    if ['uuu','uuc'] in codons[index]:
-        codons[index] = "Phe"
-    elif ['uua','uug','cuu','cuc','cua','cug'] in codons[i]:
+for i, item in enumerate(codons):
+    if codons[i] in ['uuu','uuc']:
+        codons[i] = "Phe"
+    elif codons[i] in ['uua','uug','cuu','cuc','cua','cug']:
         condons[i] = "Leu"
-    elif ['auu','auc','aua'] in codons[i]:
+    elif codons[i] in ['auu','auc','aua']:
         codons[i] = "Ile"
     elif codons[i] == 'aug':
         codons[i] = "start"
-    elif ['guc','guu','gua','gug'] in codons[i]:
+    elif codons[i] in ['guc','guu','gua','gug']:
         codons[i] = "Val"
-    elif ['ucu','ucc','uca','ucg'] in codons[i]:
+    elif codons[i] in ['ucu','ucc','uca','ucg']:
         codons[i] = "Ser"
-    elif ['ccu','ccc','cca','ccg'] in codons[i]:
+    elif codons[i] in ['ccu','ccc','cca','ccg']:
         codons[i] = "Pro"
-    elif ['acu','acc','aca','acg'] in codons[i]:
+    elif codons[i] in ['acu','acc','aca','acg']:
         codons[i] = "Thr"
-    elif ['gcu','gcc','gca','gcg'] in codons[i]:
+    elif codons[i] in ['gcu','gcc','gca','gcg']:
         codons[i] = "Ala"
-    elif ['ugu','ugc'] in codons[i]:
+    elif codons[i] in ['ugu','ugc']:
         codons[i] = "Tyr"
-    elif ['uua','uag','uga'] in codons[i]:
+    elif codons[i] in ['uua','uag','uga']:
         codons[i] = "STOP"
-    elif ['cau','cac'] in codons[i]:
+    elif codons[i] in ['cau','cac']:
         codons[i] = "His"
-    elif ['caa','cag'] in codons[i]:
+    elif codons[i] in ['caa','cag']:
         codons[i] = "Gln"
-    elif ['aau','aac'] in codons[i]:
+    elif codons[i] in ['aau','aac']:
         codons[i] = "Asn"
-    elif ['aaa','aag'] in codons[i]:
+    elif codons[i] in ['aaa','aag']:
         codons[i] = "Lys"
-    elif ['gau','gac'] in codons[i]:
+    elif codons[i] in ['gau','gac']:
         codons[i] = "Asp"
-    elif ['gaa','gag'] in codons[i]:
+    elif codons[i] in ['gaa','gag']:
         codons[i] = "Glu"
-    elif ['ugu','ugc'] in codons[i]:
+    elif codons[i] in ['ugu','ugc']:
         codons[i] = "Cys"
-    elif ['cgu','cgc','cga','cgg','aga','agg'] in codons[i]:
+    elif codons[i] in ['cgu','cgc','cga','cgg','aga','agg']:
         codons[i] = "Arg"
-    elif codons[i] == "ugg"
+    elif codons[i] == "ugg":
         codons[i] = "Trp"
-    elif ['agu','agc'] in condons[i]:
+    elif codons[i] in ['agu','agc']:
         codons[i] = "Ser"
-    elif ['ggu','ggc','gga','ggg'] in codons[i]:
+    elif codons[i] in ['ggu','ggc','gga','ggg']:
         codons[i] = "Gly"
     else:
         exit()
+print(codons)
