@@ -12,7 +12,7 @@ for i, item in enumerate(codons):
     if codons[i] in ['uuu','uuc']:
         codons[i] = "Phe"
     elif codons[i] in ['uua','uug','cuu','cuc','cua','cug']:
-        condons[i] = "Leu"
+        codons[i] = "Leu"
     elif codons[i] in ['auu','auc','aua']:
         codons[i] = "Ile"
     elif codons[i] == 'aug':
