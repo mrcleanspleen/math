@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-
-bases = input("Please input your list of DNA bases here, with each codon separated by a space: ")
+nucleic = input("Is your string from DNA or mRNA?")
+bases = input("Please input your list of bases here, with each codon separated by a space: ")
 codons = bases.split(" ")
-codons = [word.replace('g','f') for word in codons]  
-codons = [word.replace('c','g') for word in codons]  
-codons = [word.replace('a','u') for word in codons]  
-codons = [word.replace('f','c') for word in codons]  
-codons = [word.replace('t','a') for word in codons]  
+if nucleic == "dna":
+    codons = [word.replace('g','f') for word in codons]  
+    codons = [word.replace('c','g') for word in codons]  
+    codons = [word.replace('a','u') for word in codons]  
+    codons = [word.replace('f','c') for word in codons]  
+    codons = [word.replace('t','a') for word in codons]  
+else:
+    pass
 print(codons)
 for i, item in enumerate(codons):
     if codons[i] in ['uuu','uuc']:
