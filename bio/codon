@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-nucleic = input("Is your string from DNA or mRNA?")
+nucleic = input("Is your string from DNA or mRNA? ")
 bases = input("Please input your list of bases here, with each codon separated by a space: ")
 codons = bases.split(" ")
 if nucleic == "dna":
