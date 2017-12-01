@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+def basicPunnet(par1, par2):
+    if par1 == "hmd" and par2 == "hmr":
+        return "ratio of 0:1:0"
+    elif par1 == "hmd" and par2 == "htz":
+        return "ratio of 1:1:0"
+    elif par1 == "htz" and par2 == "hmr":
+        return "ratio of 0:1:1"
+    elif par1 == par2:
+        if par1 == "hmr":
+            return "ratio of 0:0:1"
+        if par1 == "htz":
+            return "ratio of 1:2:1"
+        elif par1 == "hmd":
+            return "ratio of 1:0:0"
+    else:
+        exit()
+    
