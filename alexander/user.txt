@@ -1,0 +1,1 @@
+turn all functions into ones that are actually useful that return values

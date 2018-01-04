@@ -7,6 +7,8 @@ def degtrig():
     z = float(deg * (pi/180))
     """z = radians"""
     """This mimics converting sin to a tangible number like a calculator, to 6 accurate decimal places"""
+    #Here be variable name dragons
+    #screw you peter
     zi = int(3 * 2 * 1)
     yi = int(5 * 4 * 3 * 2 * 1)
     xi= int(7 * 6 * 5 * 4 * 3 * 2 * 1)
