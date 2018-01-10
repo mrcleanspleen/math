@@ -16,14 +16,8 @@ def solve_distance(x2 float, x1 float, y2 float, y1 float):
 def solve_slope(y2 float, y1 float, x2 float, x1 float):
     return float((y2 - y1)/(x2-x1))
 
-def solve_percircle():
-
-    b = input("radius >>> ")
-    c = int(b)
-    a = int
-    a = 3.14 * 2 * c
-    print(a)
-
+def solve_percircle(b float):
+    return (3.14 * 2 * b)
 def solve_py(a = 0.0, b = 0.0, c = 0.0):
     if a == 0.0 or b == 0.0:
         return math.sqrt((c ** 2) - (a ** 2) - (b ** 2))

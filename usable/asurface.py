@@ -23,12 +23,9 @@ def paint_cost():
     else:
         print(c.cl + "Oh. I guess I'll leave now.")
         exit()
-def sacube():
-    a = int(input("What is one side's length of the cube? >>> "))
-    b = int
-    b = a * a * 6
-    print("The surface area of the cube is",b)
-    paint_cost()
+def sacube(a float):
+    return(a * a * 6)
+    
 def satriprism():
     q = input("y = right triangle, n otherwise >>> ")
     if q == "y":
@@ -98,36 +95,13 @@ def satriprism():
             bp = b3 + p2
             print("surface areas is ≈",bp)
             paint_cost()
-def rectsurface():
-    l = input("Length >>> ")
-    w = input("Width >>> ")
-    h = input("Height >>> ")
-    ll = int(l)
-    ww = int(w)
-    hh = int(h)
-    hw = int
-    wl = int
-    hl = int
-    hw = ww * hh
-    wl = ww * ll
-    hl = hh * ll
-    total = int
-    total = hw + wl + hl
-    total1 = int
-    total1 = 2 * total
-    print("Surface area is",total1)
-    paint_cost()
-def spheresurface():
-    r = input("radius >>> ")
-    rr = int(r)
-    rrr = int
-    rrr = rr * rr
-    print("3.14 is pi")
-    a = int
-    a = rrr * 4 * 3.14
-    print("Surface area is",a)
-    paint_cost()
-def cylindersurface():
+def rectsurface(leng float, wid float, ht float):
+    return 2*(wid*ht)+(wid*leng)+(ht*leng)
+
+def spheresurface(rad float):
+    return (rad**2 * 4 * 3.14)
+
+def cylindersurface(rad float, height float):
     r = input("radius >>> ")
     h = input("height >>> ")
     rr = int(r)
@@ -141,6 +115,7 @@ def cylindersurface():
     qu = u + q
     print("Surface area is",qu)
     paint_cost()
+
 def squarepyramid():
     a = input("Base edge >>> ")
     h = input("Height >>> ")
@@ -162,6 +137,7 @@ def squarepyramid():
     answer = sah2 + aa2
     print("Surface area is",answer)
     paint_cost()
+
 def rectpyramid():
     l = input("length >>> ")
     w = input("width >>> ")
@@ -197,6 +173,7 @@ def rectpyramid():
     answer = lshw + wshl + lw
     print("Surface area is",answer)
     paint_cost()
+
 def tripyramid():
     b = input("Side of base >>> ")
     a = input("Apothem (height of triangle) >>> ")
@@ -212,6 +189,7 @@ def tripyramid():
     blab = bl + ba2
     print("surface area is",blab)
     paint_cost()
+
 def conesurface():
     r = input("Radius >>> ")
     h = input("Height >>> ")
@@ -228,6 +206,7 @@ def conesurface():
     pir = rr * 3.14 * rs
     print("Surface area is",pir)
     paint_cost()
+
 def octahedron():
     a = input("Edge >>> ")
     aa = int(a)
@@ -239,6 +218,7 @@ def octahedron():
     sr2 = aa2 * sr * 2
     print("Surface area is",sr2)
     paint_cost()
+
 def hemisphere():
     r = input("radius >>> ")
     print("3.14 = pi")
@@ -247,6 +227,7 @@ def hemisphere():
     rrr = rr * rr * 2 * 3.14
     print("Surface area is",rrr)
     paint_cost()
+
 def hexagon():
     a = input("Base edge >>> ")
     h = input("Height >>> ")
