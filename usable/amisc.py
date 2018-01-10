@@ -2,6 +2,10 @@ import skilstak.colors as c
 import time as t
 import math
 
+'''
+Many things have been simplified a lot. Lots of *very hard* work done by @rydens
+'''
+
 def solve_squareroot(num float)
     """Finds the square root of a number"""
     return math.sqrt(num)
