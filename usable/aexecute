@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+import time 
+import skilstak.colors as c
+if __name__ == '__main__':
+    try:
+        while True:
+            import aoptions as o 
+            import amisc  as r
+            import aarea as a
+            import asurface as s
+            import avolume as v
+            import agraph as g
+            import atroll as t
+            o.intro()
+            """Lists all categories avaliable to the user"""
+            category = input(">>> ")
+            """Get's user input from category"""
+            if category == "v":
+                o.avolume()
+            elif category == "g":
+                o.agraph()
+            elif category == "m":
+                o.amisc()
+            elif category == "a":
+                o.aarea()
+            elif category == "s":
+                o.asurface()
+            elif category == "x":
+                o.exiting()
+            elif category == "n":
+                o.google()
+            elif category == "i":
+                r.user()
+            else:
+                t.trollface()
+            inpt = input(">>> ")
+            if inpt == "---explode---":
+                """gets messed up by troll, so is never supposed to be typed"""
+                o.exiting()
+            elif inpt == "ci":
+                """compound interest"""
+                print(c.cl)
+                r.solve_compound()
+            elif inpt == "mf":
+                """multiplies fractions"""
+                print(c.cl)
+                r.mulfrac()
+            elif inpt == "pow":
+                """use exponents and powers"""
+                print(c.cl)
+                r.power()
+            elif inpt == "st":
+                """surface area tri prism"""
+                print(c.cl)
+                s.satriprism()
+            elif inpt == "sir":
+                """simple interest"""
+                print(c.cl)
+                r.solve_interest()
+            elif inpt == "vc":
+                """volume of a cylinder"""
+                print(c.cl)
+                v.vcylinder()
+            elif inpt == "voc":
+                """volume of an octohedron"""
+                print(c.cl)
+                v.voctahedron()
+            elif inpt == "vt":
+                """volume of a tri prism"""
+                print(c.cl)
+                v.vtriprism()
+            elif inpt == "hm":
+                """volume of a hemisphere"""
+                print(c.cl)
+                v.vhemisphere()
+            elif inpt == "vh":
+                """volume of a hexagonal prism"""
+                print(c.cl)
+                v.vhexagon()
+            elif inpt == "vtp":
+                """volume of a tri pyramid"""
+                print(c.cl)
+                v.vtripyramid()
+            elif inpt == "cv":
+                """volume of a cone"""
+                print(c.cl)
+                v.solve_cone()
+            elif inpt == "vrp":
+                """volume of a rect pyramid"""
+                print(c.cl)
+                v.vrectpyramid()
+            elif inpt == "vsp":
+                """volume of a sq. pyramid"""
+                print(c.cl)
+                v.solve_sqpyramid()
+            elif inpt == "vr":
+                """volume of a rect prism"""
+                print(c.cl)
+                v.vsolve_rect()
+            elif inpt == "is":
+                """test a point in an inequality"""
+                print(c.cl)
+                g.solve_inequality()
+            elif inpt == "si":
+                """test a point in a system of inequalities"""
+                print(c.cl)
+                g.solve_inequality2()
+            elif inpt == "oc":
+                """surface area of a octa."""
+                print(c.cl)
+                s.octahedron()
+            elif inpt == "hs":
+                """surface area of a hemisphere"""
+                print(c.cl)
+                s.hemisphere()
+            elif inpt == "rs":
+                """surface area rect prism"""
+                print(c.cl)
+                s.rectsurface()
+            elif inpt == "co":
+                """surface area of a cone"""
+                print(c.cl)
+                s.conesurface()
+            elif inpt == "tp":
+                """surface area of tri pyramid"""
+                print(c.cl)
+                s.tripyramid()
+            elif inpt == "rp":
+                """surface area rect pyramid"""
+                print(c.cl)
+                s.rectpyramid()
+            elif inpt == "sps":
+                """surface area sphere"""
+                print(c.cl)
+                s.spheresurface()
+            elif inpt == "sp":
+                """surface area square pyramid"""
+                print(c.cl)
+                s.squarepyramid()
+            elif inpt == "pc":
+                """circum. of a circle"""
+                print(c.cl)
+                r.solve_percircle()
+            elif inpt == "sc":
+                """surface area cube"""
+                print(c.cl)
+                s.sacube()
+            elif inpt == "c":
+                """area of a circle"""
+                print(c.clear)
+                a.solve_circle()
+            elif inpt == "s":
+                """area of a square"""
+                print(c.clear)
+                a.solve_square()
+            elif inpt == "df":
+                """divides fractions"""
+                print(c.cl)
+                r.divfrac()
+            elif inpt == "tr":
+                """area of a triangle"""
+                print(c.clear)
+                a.solve_triangle()
+            elif inpt == "t":
+                """area of a trapezoid"""
+                print(c.clear)
+                a.solve_trapazoid()
+            elif inpt == "y":
+                print(c.clear)
+                """Equation solver"""
+                g.solve_system()
+            elif inpt == "pt":
+                """solves A^2 + B^2 = C^2"""
+                print(c.clear)
+                r.solve_py()
+            elif inpt == "ss":
+                """solves a system"""
+                print(c.clear)
+                g.solve_system2()
+            elif inpt == "cu":
+                """finds volume of a cube"""
+                print(c.cl)
+                v.solve_cube()
+            elif inpt == "sh":
+                """find volume of a sphere"""
+                print(c.cl)
+                v.solvesphere()
+            elif inpt == "sr":
+                """square root a number"""
+                print(c.cl)
+                r.solve_squareroot()
+            elif inpt == "cs":
+                """surface area cylinder"""
+                print(c.cl)
+                s.cylindersurface()
+            elif inpt == "hp":
+                """surface area of a hexagonal prism"""
+                print(c.cl)
+                s.hexagon()
+            elif inpt == "df":
+                """find distance between two points"""
+                print(c.cl)
+                r.solve_distance()
+            else:
+                """exits the program"""
+                o.exiting()
+    except KeyboardInterrupt:
+        print(c.cl)
+        exit()
