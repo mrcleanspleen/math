@@ -102,44 +102,13 @@ def spheresurface(rad float):
     return (rad**2 * 4 * 3.14)
 
 def cylindersurface(rad float, height float):
-    r = input("radius >>> ")
-    h = input("height >>> ")
-    rr = int(r)
-    hh = int(h)
-    q = int
-    print("3.14 = pi")
-    q = 2 * 3.14 * rr * hh
-    u = int
-    u = 2 * 3.14 * rr * rr
-    qu = int
-    qu = u + q
-    print("Surface area is",qu)
-    paint_cost()
+    return ((2 * 3.14 * rad * height * 2) + (rad**2 * 3.14 * 2))
 
-def squarepyramid():
-    a = input("Base edge >>> ")
-    h = input("Height >>> ")
-    aa = int(a)
-    hh = int(h)
-    aa2 = int
-    hh2 = int
-    aa2 = aa * aa
-    hh2 = hh * hh
-    aa4 = int
-    aa4 = aa2 / 4
-    ah = int
-    ah = aa4 + hh2
-    sah = int
-    sah = math.sqrt(ah)
-    sah2 = int
-    sah2 = 2 * aa * sah
-    answer = int
-    answer = sah2 + aa2
-    print("Surface area is",answer)
-    paint_cost()
+def squarepyramid(height float, edge float):
+    return (2 * edge * math.sqrt((edge**2)/4 + height) + edge**2
 
-def rectpyramid():
-    l = input("length >>> ")
+def rectpyramid(leng float, wid float, hei float):
+    l = input("length >>> ")#
     w = input("width >>> ")
     h = input("height >>> ")
     ll = int(l)
