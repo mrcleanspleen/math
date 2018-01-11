@@ -6,7 +6,7 @@ import math
 Many things have been simplified a lot. Lots of *very hard* work done by @rydens
 '''
 
-def solve_squareroot(num float)
+def solve_squareroot(num float):
     """Finds the square root of a number"""
     return math.sqrt(num)
 
@@ -39,29 +39,9 @@ def solve_interest():
     b = int
     b = a + pp
     print("You now owe",b)
-def solve_compound():
-    p = input("How much money did you borrow / invest ? >>> ")
-    r = input("What was the interest rate in percent >>> ")
-    t = input("How many years did you borrow/invest for? >>> ")
-    v = input("How many times a year was it compounded? >>> ")
-    vv = int(v)
-    pp = int(p)
-    rr = int(r)
-    tt = int(t)
-    """A = pp(1 + rr/1)^tt"""
-    rr10 = int
-    rr1 = int
-    rr2 = int
-    tr = int
-    rr10 = rr / 100
-    rr1 = rr10 / vv
-    rr2 = 1 + rr1
-    tv = int
-    tv = tt * vv
-    tr = rr2 ** tv
-    y = int
-    y = tr * pp
-    print("You now have / owe",y)
+
+def solve_compound(prin float, rate float, time float, comp float):
+    return (prin*(1+(rate/comp)**(comp*time)
 
 def power(num int, exp int):
     return num ** exp
@@ -88,3 +68,5 @@ def user():
     x = 'user.txt'
     with open (x, "w") as f:
         f.write (input (">>> "));
+if __name__ == '__main__':
+    solve_compound(100, .02, 5, 2)
