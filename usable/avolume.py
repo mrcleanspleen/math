@@ -1,69 +1,30 @@
 import skilstak.colors as c 
 import math
 import time as t
-def solve_cone():
+def solve_cone(height, rad):
     """Finds the volume of a cone"""
-    height = input(c.cl + "What is the height of your cone? >>> ")
-    radius = input(c.cl + "What is the radius of the base of your cone? >>> ")
-    x = int(height)
-    y = int(radius)
-    answer = 3.14 * y**2 * x/3
-    print("Your volume is : ",answer)
+    return float(3.14 * rad**2 * height/3)
 
-def solve_sqpyramid():
-    base = input(c.cl + "What is the length of the base of your pyramid? >>> ")
-    height = input(c.cl + "What is the height of your pyramid? >>> ")
-    x = int(base)
-    y = int(height)
-    answer = x**2 * y/3
-    print(c.cl + "Your answer is : ", answer)
+def solve_sqpyramid(base, heigh):
+    return float(base**2 * height/3)
 
-def solve_cube():
+def solve_cube(height):
     """Finds the volume of a cube"""
-    height = input("What is the height of your cube? >>> ")
-    x = int(height)
-    answer = x**3
-    print("Your volume is : " ,answer)
+    return float(height**3)
 
-def solvesphere():
+def solvesphere(rad):
     """Finds the volume of a sphere based on user input"""
-    radius = input("What is the radius of your sphere? >>> ")
-    x = int(radius)
-    print("pi = 3.14")
-    answer = int(4/3 * 3.14 * x**3)
-    print("Your volume is : ", answer)
-def vsolve_rect():
-    l = input("Length >>> ")
-    w = input("Width >>> ")
-    h = input("Height >>> ")
-    ll = int(l)
-    ww = int(w)
-    hh = int(h)
-    me = int
-    me = ll * ww * hh
-    print("Volume is",me)
-def vrectpyramid():
-    l = input("Length >>> ")
-    w = input("Width >>> ")
-    h = input("Height >>> ")
-    ll = int(l)
-    ww = int(w)
-    hh = int(h)
-    a = int
-    a = ll * ww * hh / 3
-    print("Volume is",a)
-def vtripyramid():
-    l = input("length of triangle >>> ")
-    b = input("width of triangle >>> ")
-    h = input("height of pyramid >>> ")
-    ll = int(l)
-    bb = int(b)
-    hh = int(h)
-    a = int
-    a = 1 / 6
-    c = int
-    c  =  bb * hh * ll * a
-    print("Volume is",c)
+    return float(4/3 * 3.14 * rad**3)
+
+def vsolve_rect(leng, wid, ht):
+    return float(leng * wid * ht)
+
+def vrectpyramid(leng, wid, ht):
+    return leng * wid * ht / 3
+
+def vtripyramid(leng, wid, ht):
+    return (leng * wid * ht)/6
+
 def vhexagon():
     a = input("Base edge >>> ")
     h = input("Height >>> ")
