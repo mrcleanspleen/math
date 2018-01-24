@@ -25,53 +25,21 @@ def vrectpyramid(leng, wid, ht):
 def vtripyramid(leng, wid, ht):
     return (leng * wid * ht)/6
 
-def vhexagon():
-    a = input("Base edge >>> ")
-    h = input("Height >>> ")
-    aa = int(a)
-    hh = int(h)
-    w = int
-    w = math.sqrt(3) * 3
-    r = int
-    r = w / 2 * aa * aa * hh
-    print("Volume is",r)
-def vhemisphere():
+def vhexagon(base_edge, height):
+    return (math.sqrt(3)*3) / 2 * base_edge**2 * height
+    
+def vhemisphere(rad):
     """Finds the volume of a hemisphere based on user input"""
-    radius = input("What is the radius of your hemisphere? >>> ")
-    x = int(radius)
-    print("pi = 3.14")
-    answer = int(4/3 * 3.14 * x**3)
-    v = int
-    v = answer / 2
-    print("Your volume is : ",v)
-def vtriprism():
-    a = input("Base of triangle >>> ")
-    b = input("Height of triangle >>> ")
-    c = input("Height of prism >>> ")
-    aa = int(a)
-    bb = int(b)
-    cc = int(c)
-    ab = int
-    ab = aa * bb / 2
-    ca = int
-    ca = ab * cc
-    print("Volume is",ca)
-def voctahedron():
-    a = input("Edge >>> ")
-    aa = int(a)
-    a3 = int
-    a3 = aa * aa *aa
-    x = int
-    x = math.sqrt(2) / 3
-    xa = int
-    xa = x * a3
-    print("Volume is",xa)
-def vcylinder():
-    a = input("Radius >>> ")
-    b = input("Height >>> ")
-    print("3.14 = pi")
-    aa = int(a)
-    bb = int(b)
-    r = int
-    r= aa *aa * 3.14 * bb
-    print("Volume is",r)
+    return (4/3 * 3.14 * rad**3) / 2
+
+def vtriprism(base, tri_height, prism_height):
+    """Finds the volume of a triangular prism"""
+    return (base * tri_height) / 2 * prism_height
+
+def voctahedron(edge):
+    """Finds the Volume of an octahedron"""
+    return edge**3 * math.sqrt(2) / 3
+
+def vcylinder(rad, height):
+    """Finds volume of a cylinder"""
+    return rad**2 * 3.14 * height
